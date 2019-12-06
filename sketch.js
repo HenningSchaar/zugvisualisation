@@ -1,10 +1,16 @@
-function setup() {
-    createCanvas(400, 400);
-    background(200);
-    frameRate(0.5);
-}
-
 let trains;
+let trainsOld;
+const backgroundColor = 200;
+const trainColour1 = [255, 0, 0];
+const trainColour2 = [255, 0, 255];
+const trainColour3 = [0, 255, 0];
+
+function setup() {
+    createCanvas(1000, 1000);
+    background(backgroundColor);
+    frameRate(1);
+    noStroke();
+}
 
 function draw() {
     let url =
@@ -19,7 +25,13 @@ function draw() {
 }
 
 function drawTrains(trains) {
+    background(backgroundColor);
 
+    trains.forEach(trainDataEntry => {
+        train = new Train(trainDataEntry);
+        train.display();
+        trainsOld = trains;
+    });
 }
 
 function handleError(error) {
@@ -28,11 +40,11 @@ function handleError(error) {
 }
 
 class Train {
-    constructor(trainData) {
-        this.x = trainData.xpos;
-        this.y = trainData.ypos;
+    constructor(trainDataEntry) {
+        this.x = trainDataEntry.xpos;
+        this.y = trainDataEntry.ypos;
         this.diameter = 10;
-        this.color = [random(0, 255), random(0, 255), random(0, 255)];
+        this.color = extractColour(trainDataEntry.farbe);
         this.speed = 0;
     }
 
@@ -42,6 +54,24 @@ class Train {
     }
 
     display() {
+        fill(this.color)
         ellipse(this.x, this.y, this.diameter, this.diameter);
+    }
+}
+
+function extractColour(colour) {
+    if (colour == "rot") {
+        return trainColour1;
+    } else {
+        if (colour == "lila") {
+            return trainColour2;
+        } else {
+            if (colour == "gruen") {
+                return trainColour3;
+            } else {
+                console.log('Unknown colour')
+                return [0, 0, 0];
+            }
+        }
     }
 }
