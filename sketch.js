@@ -1,6 +1,5 @@
 let trains;
 let trainsOld;
-let trainsNew = [];
 const backgroundColor = 50;
 const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];
@@ -11,30 +10,23 @@ const size = 1440;
 function setup() {
     createCanvas(size * (16 / 9), size);
     background(backgroundColor);
-    frameRate(60);
+    frameRate(1);
     textSize(32);
     noStroke();
 }
 
 function draw() {
-    frameCountThisSecond = frameCount % 60;
-    if (frameCountThisSecond % 60 == 0) {
-        getData();
-    }
+    getData();
     if (trains) {
-        compareTrains();
         drawTrains(trains);
-        console.log(trains[1].zugnr + ' ' + trains[1].xDispPos + ' ' + trains[1].yDispPos)
     }
-    text(frameCountThisSecond, 10, 30);
 }
 
 function getData() {
     let url =
-        'https://www.zugfinder.de/js/json.php?netz=deutschland|0|0|839|953';
+        'https://www.zugfinder.de/js/json_kbs.php?kbs=700';
     httpGet(url, 'json', false, function(response) {
         if (trains != response) {
-            trainsOld = trains;
             trains = response.array; //convert train data to an array of trains
             trains.shift(); //remove first entry which for some reason is always empty
         } else { console.log('No new data.') };
@@ -42,46 +34,26 @@ function getData() {
 }
 
 function drawTrains(trains) {
+    background(255);
     background(backgroundColor);
-
-    trainsNew.forEach(trainsNewDataEntry => {
-        train = new Train(trainsNewDataEntry);
+    trains.forEach(trainDataEntry => {
+        train = new Train(trainDataEntry);
         train.display();
     });
 }
-
-function compareTrains() {
-    trainsNew = [];
-    if (trainsOld && trains) {
-        trainsOld.forEach((oldTrainDataEntry, i) => {
-            trains.forEach(trainDataEntry => {
-                if (oldTrainDataEntry.zugnr == trainDataEntry.zugnr) {
-                    if (frameCountThisSecond != 0) {
-                        trainDataEntry.xDispPos = trainDataEntry.xpos - ((oldTrainDataEntry.xpos - trainDataEntry.xpos) * (frameCountThisSecond / 60));
-                        trainDataEntry.yDispPos = trainDataEntry.ypos - ((oldTrainDataEntry.ypos - trainDataEntry.ypos) * (frameCountThisSecond / 60));
-                    }
-                    trainsNew.push(trainDataEntry);
-                }
-            })
-        })
-    }
-}
-
 
 class Train {
     constructor(trainDataEntry) {
         this.x = trainDataEntry.xpos * (height / 1000) + (width / 2 - height / 2);
         this.y = trainDataEntry.ypos * (height / 1000);
-        this.xDispPos = trainDataEntry.xDispPos * (height / 1000) + (width / 2 - height / 2);
-        this.yDispPos = trainDataEntry.yDispPos * (height / 1000);
         this.diameter = 10;
         this.color = extractColour(trainDataEntry.farbe);
         this.speed = 0;
     }
 
-    display(trainOld) {
+    display() {
         fill(this.color)
-        ellipse(this.xDispPos, this.yDispPos, this.diameter, this.diameter);
+        ellipse(this.x, this.y, this.diameter, this.diameter);
     }
 }
 
