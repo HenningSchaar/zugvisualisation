@@ -1,23 +1,27 @@
 const request = require('request-promise');
+const fs = require('fs');
 const DomParser = require('dom-parser');
 const testUrl = 'https://www.zugfinder.de/kbs.php?kbs=770'
+const parser = new DomParser();
 
-let parser = new DomParser();
+const urlList = JSON.parse(fs.readFileSync('map.json')).routes;
 
-request('https://www.zugfinder.de/kbs.php?kbs=770')
-    .then(body => {
-        let dom = parser.parseFromString(body);
-        strecke = dom.getElementById('strecke');
-        positionNodes = strecke.getElementsByClassName('station');
-        stationList = extractTowns(strecke);
-        positionList = extractPositions(strecke);
+let strecken = { "strecken": [] };
 
-        console.log(positionList);
-        console.log(stationList);
-    });
+urlList.forEach(url => {
+    printStreckenTable(url);
+})
 
-function handleError(error) {
-    console.log(error);
+function printStreckenTable(url) {
+    request(url)
+        .then(body => {
+            let dom = parser.parseFromString(body);
+            strecke = dom.getElementById('strecke');
+            stationList = extractTowns(strecke);
+            positionList = extractPositions(strecke);
+            streckeTable = marryData(testUrl, stationList, positionList);
+            console.log(streckenTable);
+        });
 }
 
 function extractTowns(strecke) {
@@ -34,4 +38,21 @@ function extractPositions(strecke) {
             positionList.push(positionValue);
         })
     return positionList;
+}
+
+function marryData(testUrl, stationList, positionList) {
+    streckenTable = {
+        "url": testUrl,
+        "stations": []
+    };
+    stationList.forEach((station, i) => {
+        streckenTable.stations.push({
+            "station": station,
+            "position": positionList[i]
+        })
+    });
+}
+
+function handleError(error) {
+    console.log(error);
 }
