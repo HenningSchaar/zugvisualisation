@@ -9,10 +9,24 @@ const urlList = JSON.parse(fs.readFileSync('map.json')).routes;
 let strecken = { "strecken": [] };
 
 urlList.forEach(url => {
-    printStreckenTable(url);
+    getStreckenTable(url);
 })
 
-function printStreckenTable(url) {
+checkStrecken();
+
+function writeFileToDisk() {
+    fs.writeFileSync('strecken.json', JSON.stringify(strecken, null, "\t"));
+}
+
+function checkStrecken() {
+    if (strecken.strecken.length == urlList.length) {
+        writeFileToDisk();
+    } else {
+        setTimeout(checkStrecken, 1000);
+    }
+}
+
+function getStreckenTable(url) {
     request(url)
         .then(body => {
             let dom = parser.parseFromString(body);
@@ -20,7 +34,7 @@ function printStreckenTable(url) {
             stationList = extractTowns(strecke);
             positionList = extractPositions(strecke);
             streckeTable = marryData(testUrl, stationList, positionList);
-            console.log(streckenTable);
+            strecken.strecken.push(streckeTable);
         });
 }
 
@@ -41,16 +55,17 @@ function extractPositions(strecke) {
 }
 
 function marryData(testUrl, stationList, positionList) {
-    streckenTable = {
+    streckeTable = {
         "url": testUrl,
         "stations": []
     };
     stationList.forEach((station, i) => {
-        streckenTable.stations.push({
+        streckeTable.stations.push({
             "station": station,
             "position": positionList[i]
         })
     });
+    return streckeTable
 }
 
 function handleError(error) {
