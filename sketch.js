@@ -5,8 +5,8 @@ const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];
 const trainColour3 = [0, 255, 0];
 const trainColour4 = [0, 255, 0];
-const sizeY = 1200;
-const sizeX = sizeY * (288 / 180)
+const sizeY = 1440;
+const sizeX = sizeY * (16 / 9)
 
 function setup() {
     createCanvas(sizeX, sizeY);
