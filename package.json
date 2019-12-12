@@ -1,0 +1,25 @@
+{
+  "name": "zugvisualisation",
+  "version": "1.0.0",
+  "description": "Create a visualisation for zugfinder data.",
+  "main": "index.js",
+  "dependencies": {
+    "dom-parser": "^0.1.6",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenningSchaar/zugvisualisation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenningSchaar/zugvisualisation/issues"
+  },
+  "homepage": "https://github.com/HenningSchaar/zugvisualisation#readme"
+}
