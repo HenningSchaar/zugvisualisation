@@ -1,1749 +1,1727 @@
 {
-	"strecken": [
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Schorndorf",
-					"position": -3
-				},
-				{
-					"station": "Weiler(Rems)",
-					"position": 42
-				},
-				{
-					"station": "Winterbach(b Schorndorf)",
-					"position": 72
-				},
-				{
-					"station": "Geradstetten",
-					"position": 117
-				},
-				{
-					"station": "Grunbach",
-					"position": 147
-				},
-				{
-					"station": "Beutelsbach",
-					"position": 177
-				},
-				{
-					"station": "Endersbach",
-					"position": 207
-				},
-				{
-					"station": "Stetten-Beinstein",
-					"position": 237
-				},
-				{
-					"station": "Rommelshausen",
-					"position": 267
-				},
-				{
-					"station": "Waiblingen",
-					"position": 297
-				},
-				{
-					"station": "Fellbach",
-					"position": 327
-				},
-				{
-					"station": "Stuttgart-Sommerrain",
-					"position": 357
-				},
-				{
-					"station": "Stuttgart Nürnberger Str.",
-					"position": 387
-				},
-				{
-					"station": "Stuttgart-Bad Cannstatt",
-					"position": 417
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 477
-				},
-				{
-					"station": "Stuttgart Stadtmitte",
-					"position": 507
-				},
-				{
-					"station": "Stuttgart Feuersee",
-					"position": 522
-				},
-				{
-					"station": "Stuttgart Schwabstr.",
-					"position": 537
-				},
-				{
-					"station": "Stuttgart Universität",
-					"position": 612
-				},
-				{
-					"station": "Stuttgart-Österfeld",
-					"position": 642
-				},
-				{
-					"station": "Stuttgart-Vaihingen",
-					"position": 672
-				},
-				{
-					"station": "Stuttgart-Rohr",
-					"position": 687
-				},
-				{
-					"station": "Oberaichen",
-					"position": 717
-				},
-				{
-					"station": "Leinfelden",
-					"position": 747
-				},
-				{
-					"station": "Echterdingen",
-					"position": 792
-				},
-				{
-					"station": "Stuttgart Flughafen/Messe",
-					"position": 837
-				},
-				{
-					"station": "Filderstadt",
-					"position": 897
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Karlsruhe Hbf",
-					"position": -3
-				},
-				{
-					"station": "Karlsruhe-Durlach",
-					"position": 31
-				},
-				{
-					"station": "Wilferdingen-Singen",
-					"position": 94
-				},
-				{
-					"station": "Pforzheim Hbf",
-					"position": 163
-				},
-				{
-					"station": "Eutingen(Baden)",
-					"position": 238
-				},
-				{
-					"station": "Niefern",
-					"position": 259
-				},
-				{
-					"station": "Enzberg",
-					"position": 280
-				},
-				{
-					"station": "Mühlacker",
-					"position": 300
-				},
-				{
-					"station": "Mühlacker Rößlesweg",
-					"position": 314
-				},
-				{
-					"station": "Illingen(Württ)",
-					"position": 342
-				},
-				{
-					"station": "Vaihingen(Enz)",
-					"position": 363
-				},
-				{
-					"station": "Sersheim",
-					"position": 418
-				},
-				{
-					"station": "Sachsenheim",
-					"position": 438
-				},
-				{
-					"station": "Ellental",
-					"position": 473
-				},
-				{
-					"station": "Bietigheim-Bissingen",
-					"position": 487
-				},
-				{
-					"station": "Ludwigsburg",
-					"position": 535
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Stuttgart Hbf",
-					"position": -3
-				},
-				{
-					"station": "Böblingen",
-					"position": 78
-				},
-				{
-					"station": "Herrenberg",
-					"position": 115
-				},
-				{
-					"station": "Gäufelden",
-					"position": 131
-				},
-				{
-					"station": "Bondorf(b Herrenberg)",
-					"position": 143
-				},
-				{
-					"station": "Ergenzingen",
-					"position": 159
-				},
-				{
-					"station": "Eutingen im Gäu",
-					"position": 167
-				},
-				{
-					"station": "Horb",
-					"position": 196
-				},
-				{
-					"station": "Sulz(Neckar)",
-					"position": 240
-				},
-				{
-					"station": "Oberndorf(Neckar)",
-					"position": 269
-				},
-				{
-					"station": "Rottweil",
-					"position": 317
-				},
-				{
-					"station": "Aldingen(b Spaichingen)",
-					"position": 386
-				},
-				{
-					"station": "Spaichingen",
-					"position": 415
-				},
-				{
-					"station": "Tuttlingen",
-					"position": 479
-				},
-				{
-					"station": "Engen",
-					"position": 556
-				},
-				{
-					"station": "Singen(Hohentwiel)",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Böblingen",
-					"position": -3
-				},
-				{
-					"station": "Sindelfingen",
-					"position": 24
-				},
-				{
-					"station": "Maichingen",
-					"position": 52
-				},
-				{
-					"station": "Maichingen Nord",
-					"position": 65
-				},
-				{
-					"station": "Magstadt",
-					"position": 92
-				},
-				{
-					"station": "Renningen Süd",
-					"position": 133
-				},
-				{
-					"station": "Malmsheim",
-					"position": 161
-				},
-				{
-					"station": "Rutesheim",
-					"position": 202
-				},
-				{
-					"station": "Leonberg",
-					"position": 242
-				},
-				{
-					"station": "Höfingen",
-					"position": 283
-				},
-				{
-					"station": "Ditzingen",
-					"position": 324
-				},
-				{
-					"station": "Weilimdorf",
-					"position": 352
-				},
-				{
-					"station": "Korntal",
-					"position": 392
-				},
-				{
-					"station": "Neuwirtshaus(Porscheplatz)",
-					"position": 420
-				},
-				{
-					"station": "Stuttgart-Zuffenhausen",
-					"position": 447
-				},
-				{
-					"station": "Stuttgart-Feuerbach",
-					"position": 474
-				},
-				{
-					"station": "Stuttgart Nord",
-					"position": 502
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 542
-				},
-				{
-					"station": "Stuttgart Stadtmitte",
-					"position": 556
-				},
-				{
-					"station": "Stuttgart Feuersee",
-					"position": 570
-				},
-				{
-					"station": "Stuttgart Schwabstr.",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Mannheim Hbf",
-					"position": -3
-				},
-				{
-					"station": "Mannheim-Neckarau",
-					"position": 44
-				},
-				{
-					"station": "Mannheim-Rheinau",
-					"position": 91
-				},
-				{
-					"station": "Schwetzingen",
-					"position": 138
-				},
-				{
-					"station": "Oftersheim",
-					"position": 162
-				},
-				{
-					"station": "Hockenheim",
-					"position": 221
-				},
-				{
-					"station": "Neulußheim",
-					"position": 256
-				},
-				{
-					"station": "Waghäusel",
-					"position": 303
-				},
-				{
-					"station": "Wiesental",
-					"position": 338
-				},
-				{
-					"station": "Graben-Neudorf",
-					"position": 397
-				},
-				{
-					"station": "Friedrichstal(Baden)",
-					"position": 456
-				},
-				{
-					"station": "Blankenloch",
-					"position": 491
-				},
-				{
-					"station": "Karlsruhe-Hagsfeld",
-					"position": 538
-				},
-				{
-					"station": "Karlsruhe Hbf",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Bietigheim-Bissingen",
-					"position": -3
-				},
-				{
-					"station": "Tamm(Württ)",
-					"position": 69
-				},
-				{
-					"station": "Asperg",
-					"position": 117
-				},
-				{
-					"station": "Ludwigsburg",
-					"position": 189
-				},
-				{
-					"station": "Kornwestheim Pbf",
-					"position": 261
-				},
-				{
-					"station": "Stuttgart-Zuffenhausen",
-					"position": 333
-				},
-				{
-					"station": "Stuttgart-Feuerbach",
-					"position": 381
-				},
-				{
-					"station": "Stuttgart Nord",
-					"position": 429
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 501
-				},
-				{
-					"station": "Stuttgart Stadtmitte",
-					"position": 525
-				},
-				{
-					"station": "Stuttgart Feuersee",
-					"position": 549
-				},
-				{
-					"station": "Stuttgart Schwabstr.",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Backnang",
-					"position": -3
-				},
-				{
-					"station": "Burgstall(Murr)",
-					"position": 65
-				},
-				{
-					"station": "Kirchberg(Murr)",
-					"position": 117
-				},
-				{
-					"station": "Marbach(Neckar)",
-					"position": 236
-				},
-				{
-					"station": "Benningen(Neckar)",
-					"position": 270
-				},
-				{
-					"station": "Freiberg(Neckar)",
-					"position": 321
-				},
-				{
-					"station": "Favoritepark",
-					"position": 356
-				},
-				{
-					"station": "Ludwigsburg",
-					"position": 407
-				},
-				{
-					"station": "Kornwestheim Pbf",
-					"position": 458
-				},
-				{
-					"station": "Stuttgart-Zuffenhausen",
-					"position": 509
-				},
-				{
-					"station": "Stuttgart-Feuerbach",
-					"position": 543
-				},
-				{
-					"station": "Stuttgart Nord",
-					"position": 577
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 629
-				},
-				{
-					"station": "Stuttgart Stadtmitte",
-					"position": 646
-				},
-				{
-					"station": "Stuttgart Feuersee",
-					"position": 663
-				},
-				{
-					"station": "Stuttgart Schwabstr.",
-					"position": 697
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Kirchheim(Teck)",
-					"position": -3
-				},
-				{
-					"station": "Kirchheim(Teck)-Ötlingen",
-					"position": 33
-				},
-				{
-					"station": "Wendlingen(Neckar)",
-					"position": 93
-				},
-				{
-					"station": "Wernau(Neckar)",
-					"position": 129
-				},
-				{
-					"station": "Plochingen",
-					"position": 177
-				},
-				{
-					"station": "Altbach",
-					"position": 201
-				},
-				{
-					"station": "Esslingen-Zell",
-					"position": 225
-				},
-				{
-					"station": "Oberesslingen",
-					"position": 261
-				},
-				{
-					"station": "Esslingen(Neckar)",
-					"position": 285
-				},
-				{
-					"station": "Esslingen-Mettingen",
-					"position": 309
-				},
-				{
-					"station": "Stuttgart-Obertürkheim",
-					"position": 333
-				},
-				{
-					"station": "Stuttgart-Untertürkheim",
-					"position": 369
-				},
-				{
-					"station": "Stuttgart Neckarpark (Mercedes-Benz)",
-					"position": 393
-				},
-				{
-					"station": "Stuttgart-Bad Cannstatt",
-					"position": 429
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 477
-				},
-				{
-					"station": "Stuttgart Stadtmitte",
-					"position": 501
-				},
-				{
-					"station": "Stuttgart Feuersee",
-					"position": 513
-				},
-				{
-					"station": "Stuttgart Schwabstr.",
-					"position": 525
-				},
-				{
-					"station": "Stuttgart Universität",
-					"position": 585
-				},
-				{
-					"station": "Stuttgart-Österfeld",
-					"position": 609
-				},
-				{
-					"station": "Stuttgart-Vaihingen",
-					"position": 633
-				},
-				{
-					"station": "Stuttgart-Rohr",
-					"position": 645
-				},
-				{
-					"station": "Goldberg(Württ)",
-					"position": 705
-				},
-				{
-					"station": "Böblingen",
-					"position": 729
-				},
-				{
-					"station": "Hulb",
-					"position": 753
-				},
-				{
-					"station": "Ehningen(b Böblingen)",
-					"position": 789
-				},
-				{
-					"station": "Gärtringen",
-					"position": 825
-				},
-				{
-					"station": "Nufringen",
-					"position": 849
-				},
-				{
-					"station": "Herrenberg",
-					"position": 897
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Weil der Stadt",
-					"position": -3
-				},
-				{
-					"station": "Malmsheim",
-					"position": 30
-				},
-				{
-					"station": "Renningen",
-					"position": 64
-				},
-				{
-					"station": "Rutesheim",
-					"position": 114
-				},
-				{
-					"station": "Leonberg",
-					"position": 164
-				},
-				{
-					"station": "Höfingen",
-					"position": 214
-				},
-				{
-					"station": "Ditzingen",
-					"position": 264
-				},
-				{
-					"station": "Weilimdorf",
-					"position": 297
-				},
-				{
-					"station": "Korntal",
-					"position": 347
-				},
-				{
-					"station": "Neuwirtshaus(Porscheplatz)",
-					"position": 380
-				},
-				{
-					"station": "Stuttgart-Zuffenhausen",
-					"position": 414
-				},
-				{
-					"station": "Stuttgart-Feuerbach",
-					"position": 447
-				},
-				{
-					"station": "Stuttgart Nord",
-					"position": 480
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 530
-				},
-				{
-					"station": "Stuttgart Stadtmitte",
-					"position": 547
-				},
-				{
-					"station": "Stuttgart Feuersee",
-					"position": 564
-				},
-				{
-					"station": "Stuttgart Schwabstr.",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Karlsruhe Hbf",
-					"position": -3
-				},
-				{
-					"station": "Karlsruhe West",
-					"position": 48
-				},
-				{
-					"station": "Karlsruhe-Mühlburg",
-					"position": 68
-				},
-				{
-					"station": "Karlsruhe-Knielingen",
-					"position": 98
-				},
-				{
-					"station": "Maximiliansau West",
-					"position": 159
-				},
-				{
-					"station": "Wörth(Rhein)",
-					"position": 180
-				},
-				{
-					"station": "Wörth(Rhein) Mozartstraße",
-					"position": 210
-				},
-				{
-					"station": "Kandel",
-					"position": 261
-				},
-				{
-					"station": "Winden(Pfalz)",
-					"position": 322
-				},
-				{
-					"station": "Steinweiler",
-					"position": 352
-				},
-				{
-					"station": "Rohrbach(Pfalz)",
-					"position": 383
-				},
-				{
-					"station": "Insheim",
-					"position": 423
-				},
-				{
-					"station": "Landau(Pfalz)Hbf",
-					"position": 474
-				},
-				{
-					"station": "Knöringen-Essingen",
-					"position": 525
-				},
-				{
-					"station": "Edesheim(Pfalz)",
-					"position": 555
-				},
-				{
-					"station": "Edenkoben",
-					"position": 585
-				},
-				{
-					"station": "Maikammer-Kirrweiler",
-					"position": 616
-				},
-				{
-					"station": "Neustadt(Weinstr) Süd",
-					"position": 667
-				},
-				{
-					"station": "Neustadt(Weinstr)Hbf",
-					"position": 697
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Backnang",
-					"position": -3
-				},
-				{
-					"station": "Maubach",
-					"position": 32
-				},
-				{
-					"station": "Nellmersbach",
-					"position": 68
-				},
-				{
-					"station": "Winnenden",
-					"position": 121
-				},
-				{
-					"station": "Schwaikheim",
-					"position": 156
-				},
-				{
-					"station": "Neustadt-Hohenacker",
-					"position": 191
-				},
-				{
-					"station": "Waiblingen",
-					"position": 262
-				},
-				{
-					"station": "Fellbach",
-					"position": 297
-				},
-				{
-					"station": "Stuttgart-Sommerrain",
-					"position": 332
-				},
-				{
-					"station": "Stuttgart Nürnberger Str.",
-					"position": 368
-				},
-				{
-					"station": "Stuttgart-Bad Cannstatt",
-					"position": 403
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 473
-				},
-				{
-					"station": "Stuttgart Stadtmitte",
-					"position": 509
-				},
-				{
-					"station": "Stuttgart Feuersee",
-					"position": 526
-				},
-				{
-					"station": "Stuttgart Schwabstr.",
-					"position": 544
-				},
-				{
-					"station": "Stuttgart Universität",
-					"position": 632
-				},
-				{
-					"station": "Stuttgart-Österfeld",
-					"position": 668
-				},
-				{
-					"station": "Stuttgart-Vaihingen",
-					"position": 703
-				},
-				{
-					"station": "Stuttgart-Rohr",
-					"position": 721
-				},
-				{
-					"station": "Oberaichen",
-					"position": 756
-				},
-				{
-					"station": "Leinfelden",
-					"position": 791
-				},
-				{
-					"station": "Echterdingen",
-					"position": 844
-				},
-				{
-					"station": "Stuttgart Flughafen/Messe",
-					"position": 897
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Karlsruhe Hbf",
-					"position": -3
-				},
-				{
-					"station": "Karlsruhe-Durlach",
-					"position": 61
-				},
-				{
-					"station": "Weingarten(Baden)",
-					"position": 137
-				},
-				{
-					"station": "Untergrombach",
-					"position": 188
-				},
-				{
-					"station": "Bruchsal Bildungszentrum",
-					"position": 227
-				},
-				{
-					"station": "Bruchsal",
-					"position": 252
-				},
-				{
-					"station": "Ubstadt-Weiher",
-					"position": 303
-				},
-				{
-					"station": "Bad Schönborn Süd",
-					"position": 342
-				},
-				{
-					"station": "Bad Schönborn-Kronau",
-					"position": 367
-				},
-				{
-					"station": "Rot-Malsch",
-					"position": 406
-				},
-				{
-					"station": "Wiesloch-Walldorf",
-					"position": 457
-				},
-				{
-					"station": "St Ilgen-Sandhausen",
-					"position": 508
-				},
-				{
-					"station": "Heidelberg-Kirchheim/Rohrbach",
-					"position": 546
-				},
-				{
-					"station": "Heidelberg Hbf",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Mainz Hbf",
-					"position": -3
-				},
-				{
-					"station": "Worms Hbf",
-					"position": 168
-				},
-				{
-					"station": "Frankenthal Hbf",
-					"position": 208
-				},
-				{
-					"station": "Ludwigshafen(Rh)Hbf",
-					"position": 261
-				},
-				{
-					"station": "Schifferstadt",
-					"position": 320
-				},
-				{
-					"station": "Speyer Hbf",
-					"position": 360
-				},
-				{
-					"station": "Germersheim",
-					"position": 412
-				},
-				{
-					"station": "Philippsburg(Baden)",
-					"position": 465
-				},
-				{
-					"station": "Graben-Neudorf",
-					"position": 518
-				},
-				{
-					"station": "Karlsruhe Hbf",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Mannheim Hbf",
-					"position": -3
-				},
-				{
-					"station": "Mannheim-Neckarau",
-					"position": 44
-				},
-				{
-					"station": "Mannheim-Rheinau",
-					"position": 91
-				},
-				{
-					"station": "Schwetzingen",
-					"position": 138
-				},
-				{
-					"station": "Oftersheim",
-					"position": 162
-				},
-				{
-					"station": "Hockenheim",
-					"position": 221
-				},
-				{
-					"station": "Neulußheim",
-					"position": 256
-				},
-				{
-					"station": "Waghäusel",
-					"position": 303
-				},
-				{
-					"station": "Wiesental",
-					"position": 338
-				},
-				{
-					"station": "Graben-Neudorf",
-					"position": 397
-				},
-				{
-					"station": "Friedrichstal(Baden)",
-					"position": 456
-				},
-				{
-					"station": "Blankenloch",
-					"position": 491
-				},
-				{
-					"station": "Karlsruhe-Hagsfeld",
-					"position": 538
-				},
-				{
-					"station": "Karlsruhe Hbf",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Karlsruhe Hbf",
-					"position": -3
-				},
-				{
-					"station": "Ettlingen West",
-					"position": 24
-				},
-				{
-					"station": "Bruchhausen(b Ettlingen)",
-					"position": 39
-				},
-				{
-					"station": "Malsch",
-					"position": 62
-				},
-				{
-					"station": "Muggensturm",
-					"position": 77
-				},
-				{
-					"station": "Rastatt",
-					"position": 98
-				},
-				{
-					"station": "Baden-Baden Haueneberstein",
-					"position": 125
-				},
-				{
-					"station": "Baden-Baden",
-					"position": 141
-				},
-				{
-					"station": "Sinzheim",
-					"position": 152
-				},
-				{
-					"station": "Sinzheim Nord",
-					"position": 162
-				},
-				{
-					"station": "Baden-Baden Rebland",
-					"position": 179
-				},
-				{
-					"station": "Bühl(Baden)",
-					"position": 200
-				},
-				{
-					"station": "Achern",
-					"position": 237
-				},
-				{
-					"station": "Renchen",
-					"position": 258
-				},
-				{
-					"station": "Appenweier",
-					"position": 279
-				},
-				{
-					"station": "Offenburg",
-					"position": 306
-				},
-				{
-					"station": "Friesenheim(Baden)",
-					"position": 344
-				},
-				{
-					"station": "Lahr(Schwarzw)",
-					"position": 359
-				},
-				{
-					"station": "Orschweier",
-					"position": 386
-				},
-				{
-					"station": "Ringsheim",
-					"position": 396
-				},
-				{
-					"station": "Herbolzheim(Breisg)",
-					"position": 407
-				},
-				{
-					"station": "Kenzingen",
-					"position": 423
-				},
-				{
-					"station": "Riegel am Kaiserstuhl Ort",
-					"position": 444
-				},
-				{
-					"station": "Köndringen",
-					"position": 455
-				},
-				{
-					"station": "Teningen-Mundingen",
-					"position": 465
-				},
-				{
-					"station": "Emmendingen",
-					"position": 477
-				},
-				{
-					"station": "Kollmarsreute",
-					"position": 492
-				},
-				{
-					"station": "Denzlingen",
-					"position": 509
-				},
-				{
-					"station": "Gundelfingen(Breisgau)",
-					"position": 524
-				},
-				{
-					"station": "Freiburg-Zähringen",
-					"position": 540
-				},
-				{
-					"station": "Freiburg-Herdern",
-					"position": 551
-				},
-				{
-					"station": "Freiburg(Breisgau) Hbf",
-					"position": 561
-				},
-				{
-					"station": "Freiburg-St Georgen",
-					"position": 584
-				},
-				{
-					"station": "Ebringen",
-					"position": 599
-				},
-				{
-					"station": "Schallstadt",
-					"position": 609
-				},
-				{
-					"station": "Norsingen",
-					"position": 626
-				},
-				{
-					"station": "Bad Krozingen",
-					"position": 642
-				},
-				{
-					"station": "Heitersheim",
-					"position": 663
-				},
-				{
-					"station": "Buggingen",
-					"position": 678
-				},
-				{
-					"station": "Müllheim(Baden)",
-					"position": 705
-				},
-				{
-					"station": "Auggen",
-					"position": 716
-				},
-				{
-					"station": "Schliengen",
-					"position": 726
-				},
-				{
-					"station": "Bad Bellingen",
-					"position": 743
-				},
-				{
-					"station": "Rheinweiler",
-					"position": 759
-				},
-				{
-					"station": "Kleinkems",
-					"position": 774
-				},
-				{
-					"station": "Istein",
-					"position": 797
-				},
-				{
-					"station": "Efringen-Kirchen",
-					"position": 807
-				},
-				{
-					"station": "Eimeldingen",
-					"position": 822
-				},
-				{
-					"station": "Haltingen",
-					"position": 833
-				},
-				{
-					"station": "Weil am Rhein",
-					"position": 843
-				},
-				{
-					"station": "Basel Bad Bf",
-					"position": 870
-				},
-				{
-					"station": "Basel SBB",
-					"position": 897
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Mannheim Hbf",
-					"position": -3
-				},
-				{
-					"station": "Heidelberg Hbf",
-					"position": 71
-				},
-				{
-					"station": "Wiesloch-Walldorf",
-					"position": 115
-				},
-				{
-					"station": "Bad Schönborn-Kronau",
-					"position": 145
-				},
-				{
-					"station": "Bruchsal",
-					"position": 189
-				},
-				{
-					"station": "Bretten",
-					"position": 257
-				},
-				{
-					"station": "Mühlacker",
-					"position": 331
-				},
-				{
-					"station": "Mühlacker Rößlesweg",
-					"position": 337
-				},
-				{
-					"station": "Illingen(Württ)",
-					"position": 362
-				},
-				{
-					"station": "Vaihingen(Enz)",
-					"position": 381
-				},
-				{
-					"station": "Sersheim",
-					"position": 405
-				},
-				{
-					"station": "Sachsenheim",
-					"position": 424
-				},
-				{
-					"station": "Ellental",
-					"position": 449
-				},
-				{
-					"station": "Bietigheim-Bissingen",
-					"position": 461
-				},
-				{
-					"station": "Ludwigsburg",
-					"position": 517
-				},
-				{
-					"station": "Stuttgart Hbf",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Mannheim Hbf",
-					"position": -3
-				},
-				{
-					"station": "Mannheim Handelshafen",
-					"position": 36
-				},
-				{
-					"station": "Mannheim-Neckarstadt",
-					"position": 61
-				},
-				{
-					"station": "Mannheim-Luzenberg",
-					"position": 87
-				},
-				{
-					"station": "Mannheim-Waldhof",
-					"position": 113
-				},
-				{
-					"station": "Lampertheim",
-					"position": 177
-				},
-				{
-					"station": "Bürstadt",
-					"position": 216
-				},
-				{
-					"station": "Bobstadt",
-					"position": 241
-				},
-				{
-					"station": "Biblis",
-					"position": 293
-				},
-				{
-					"station": "Groß Rohrheim",
-					"position": 331
-				},
-				{
-					"station": "Gernsheim",
-					"position": 383
-				},
-				{
-					"station": "Biebesheim",
-					"position": 421
-				},
-				{
-					"station": "Stockstadt(Rhein)",
-					"position": 460
-				},
-				{
-					"station": "Riedstadt-Goddelau",
-					"position": 498
-				},
-				{
-					"station": "Riedstadt-Wolfskehlen",
-					"position": 524
-				},
-				{
-					"station": "Groß Gerau-Dornheim",
-					"position": 550
-				},
-				{
-					"station": "Groß Gerau-Dornberg",
-					"position": 588
-				},
-				{
-					"station": "Mörfelden",
-					"position": 653
-				},
-				{
-					"station": "Walldorf(Hess)",
-					"position": 678
-				},
-				{
-					"station": "Zeppelinheim",
-					"position": 730
-				},
-				{
-					"station": "Frankfurt am Main - Stadion",
-					"position": 781
-				},
-				{
-					"station": "Frankfurt-Niederrad",
-					"position": 820
-				},
-				{
-					"station": "Frankfurt(Main)Hbf",
-					"position": 897
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Mainz Hbf",
-					"position": -3
-				},
-				{
-					"station": "Mainz Römisches Theater",
-					"position": 23
-				},
-				{
-					"station": "Mainz-Laubenheim",
-					"position": 57
-				},
-				{
-					"station": "Bodenheim",
-					"position": 83
-				},
-				{
-					"station": "Nackenheim",
-					"position": 108
-				},
-				{
-					"station": "Nierstein",
-					"position": 143
-				},
-				{
-					"station": "Oppenheim",
-					"position": 160
-				},
-				{
-					"station": "Guntersblum",
-					"position": 203
-				},
-				{
-					"station": "Alsheim",
-					"position": 228
-				},
-				{
-					"station": "Mettenheim",
-					"position": 246
-				},
-				{
-					"station": "Osthofen",
-					"position": 271
-				},
-				{
-					"station": "Worms Hbf",
-					"position": 331
-				},
-				{
-					"station": "Bobenheim",
-					"position": 366
-				},
-				{
-					"station": "Frankenthal Hbf",
-					"position": 400
-				},
-				{
-					"station": "Ludwigshafen-Oggersheim",
-					"position": 434
-				},
-				{
-					"station": "Ludwigshafen(Rh)Hbf",
-					"position": 468
-				},
-				{
-					"station": "Ludwigshafen(Rhein) Mitte",
-					"position": 486
-				},
-				{
-					"station": "Mannheim Hbf",
-					"position": 511
-				},
-				{
-					"station": "Mannheim-Friedrichsfeld",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Saarbrücken Hbf",
-					"position": -3
-				},
-				{
-					"station": "Saarbrücken Ost",
-					"position": 24
-				},
-				{
-					"station": "Schafbrücke",
-					"position": 42
-				},
-				{
-					"station": "Scheidt(Saar)",
-					"position": 59
-				},
-				{
-					"station": "Rentrisch",
-					"position": 77
-				},
-				{
-					"station": "St Ingbert",
-					"position": 104
-				},
-				{
-					"station": "Rohrbach(Saar)",
-					"position": 131
-				},
-				{
-					"station": "Kirkel",
-					"position": 157
-				},
-				{
-					"station": "Limbach(b Homburg,Saar)",
-					"position": 184
-				},
-				{
-					"station": "Homburg(Saar)Hbf",
-					"position": 220
-				},
-				{
-					"station": "Bruchmühlbach-Miesau",
-					"position": 273
-				},
-				{
-					"station": "Hauptstuhl",
-					"position": 300
-				},
-				{
-					"station": "Landstuhl",
-					"position": 327
-				},
-				{
-					"station": "Kindsbach",
-					"position": 353
-				},
-				{
-					"station": "Einsiedlerhof",
-					"position": 380
-				},
-				{
-					"station": "Vogelweh",
-					"position": 407
-				},
-				{
-					"station": "Kennelgarten",
-					"position": 425
-				},
-				{
-					"station": "Kaiserslautern Hbf",
-					"position": 451
-				},
-				{
-					"station": "Hochspeyer",
-					"position": 505
-				},
-				{
-					"station": "Frankenstein(Pfalz)",
-					"position": 541
-				},
-				{
-					"station": "Weidenthal",
-					"position": 567
-				},
-				{
-					"station": "Neidenfels",
-					"position": 603
-				},
-				{
-					"station": "Lambrecht(Pfalz)",
-					"position": 621
-				},
-				{
-					"station": "Neustadt(Weinstr)Hbf",
-					"position": 665
-				},
-				{
-					"station": "Neustadt-Böbig",
-					"position": 674
-				},
-				{
-					"station": "Haßloch(Pfalz)",
-					"position": 710
-				},
-				{
-					"station": "Böhl-Iggelheim",
-					"position": 737
-				},
-				{
-					"station": "Schifferstadt",
-					"position": 763
-				},
-				{
-					"station": "Limburgerhof",
-					"position": 790
-				},
-				{
-					"station": "Ludwigshafen-Rheingönheim",
-					"position": 817
-				},
-				{
-					"station": "Ludwigshafen-Mundenheim",
-					"position": 835
-				},
-				{
-					"station": "Ludwigshafen(Rh)Hbf",
-					"position": 852
-				},
-				{
-					"station": "Ludwigshafen(Rhein) Mitte",
-					"position": 870
-				},
-				{
-					"station": "Mannheim Hbf",
-					"position": 897
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Mannheim Hbf",
-					"position": -3
-				},
-				{
-					"station": "Heidelberg Hbf",
-					"position": 113
-				},
-				{
-					"station": "Meckesheim",
-					"position": 171
-				},
-				{
-					"station": "Sinsheim(Elsenz) Hbf",
-					"position": 239
-				},
-				{
-					"station": "Steinsfurt",
-					"position": 278
-				},
-				{
-					"station": "Bad Rappenau",
-					"position": 394
-				},
-				{
-					"station": "Bad Wimpfen",
-					"position": 462
-				},
-				{
-					"station": "Bad Friedrichshall Hbf",
-					"position": 500
-				},
-				{
-					"station": "Neckarsulm",
-					"position": 549
-				},
-				{
-					"station": "Heilbronn Hbf",
-					"position": 597
-				}
-			]
-		},
-		{
-			"url": "https://www.zugfinder.de/kbs.php?kbs=770",
-			"stations": [
-				{
-					"station": "Mannheim Hbf",
-					"position": -3
-				},
-				{
-					"station": "Heidelberg Hbf",
-					"position": 97
-				},
-				{
-					"station": "Eberbach",
-					"position": 297
-				},
-				{
-					"station": "Mosbach-Neckarelz",
-					"position": 405
-				},
-				{
-					"station": "Bad Friedrichshall Hbf",
-					"position": 514
-				},
-				{
-					"station": "Neckarsulm",
-					"position": 555
-				},
-				{
-					"station": "Heilbronn Hbf",
-					"position": 597
-				}
-			]
-		}
-	]
+    "strecken": [{
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Böblingen",
+                    "position": -3
+                },
+                {
+                    "station": "Sindelfingen",
+                    "position": 24
+                },
+                {
+                    "station": "Maichingen",
+                    "position": 52
+                },
+                {
+                    "station": "Maichingen Nord",
+                    "position": 65
+                },
+                {
+                    "station": "Magstadt",
+                    "position": 92
+                },
+                {
+                    "station": "Renningen Süd",
+                    "position": 133
+                },
+                {
+                    "station": "Malmsheim",
+                    "position": 161
+                },
+                {
+                    "station": "Rutesheim",
+                    "position": 202
+                },
+                {
+                    "station": "Leonberg",
+                    "position": 242
+                },
+                {
+                    "station": "Höfingen",
+                    "position": 283
+                },
+                {
+                    "station": "Ditzingen",
+                    "position": 324
+                },
+                {
+                    "station": "Weilimdorf",
+                    "position": 352
+                },
+                {
+                    "station": "Korntal",
+                    "position": 392
+                },
+                {
+                    "station": "Neuwirtshaus(Porscheplatz)",
+                    "position": 420
+                },
+                {
+                    "station": "Stuttgart-Zuffenhausen",
+                    "position": 447
+                },
+                {
+                    "station": "Stuttgart-Feuerbach",
+                    "position": 474
+                },
+                {
+                    "station": "Stuttgart Nord",
+                    "position": 502
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 542
+                },
+                {
+                    "station": "Stuttgart Stadtmitte",
+                    "position": 556
+                },
+                {
+                    "station": "Stuttgart Feuersee",
+                    "position": 570
+                },
+                {
+                    "station": "Stuttgart Schwabstr.",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Karlsruhe Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Karlsruhe-Durlach",
+                    "position": 31
+                },
+                {
+                    "station": "Wilferdingen-Singen",
+                    "position": 94
+                },
+                {
+                    "station": "Pforzheim Hbf",
+                    "position": 163
+                },
+                {
+                    "station": "Eutingen(Baden)",
+                    "position": 238
+                },
+                {
+                    "station": "Niefern",
+                    "position": 259
+                },
+                {
+                    "station": "Enzberg",
+                    "position": 280
+                },
+                {
+                    "station": "Mühlacker",
+                    "position": 300
+                },
+                {
+                    "station": "Mühlacker Rößlesweg",
+                    "position": 314
+                },
+                {
+                    "station": "Illingen(Württ)",
+                    "position": 342
+                },
+                {
+                    "station": "Vaihingen(Enz)",
+                    "position": 363
+                },
+                {
+                    "station": "Sersheim",
+                    "position": 418
+                },
+                {
+                    "station": "Sachsenheim",
+                    "position": 438
+                },
+                {
+                    "station": "Ellental",
+                    "position": 473
+                },
+                {
+                    "station": "Bietigheim-Bissingen",
+                    "position": 487
+                },
+                {
+                    "station": "Ludwigsburg",
+                    "position": 535
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Stuttgart Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Böblingen",
+                    "position": 78
+                },
+                {
+                    "station": "Herrenberg",
+                    "position": 115
+                },
+                {
+                    "station": "Gäufelden",
+                    "position": 131
+                },
+                {
+                    "station": "Bondorf(b Herrenberg)",
+                    "position": 143
+                },
+                {
+                    "station": "Ergenzingen",
+                    "position": 159
+                },
+                {
+                    "station": "Eutingen im Gäu",
+                    "position": 167
+                },
+                {
+                    "station": "Horb",
+                    "position": 196
+                },
+                {
+                    "station": "Sulz(Neckar)",
+                    "position": 240
+                },
+                {
+                    "station": "Oberndorf(Neckar)",
+                    "position": 269
+                },
+                {
+                    "station": "Rottweil",
+                    "position": 317
+                },
+                {
+                    "station": "Aldingen(b Spaichingen)",
+                    "position": 386
+                },
+                {
+                    "station": "Spaichingen",
+                    "position": 415
+                },
+                {
+                    "station": "Tuttlingen",
+                    "position": 479
+                },
+                {
+                    "station": "Engen",
+                    "position": 556
+                },
+                {
+                    "station": "Singen(Hohentwiel)",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Backnang",
+                    "position": -3
+                },
+                {
+                    "station": "Burgstall(Murr)",
+                    "position": 65
+                },
+                {
+                    "station": "Kirchberg(Murr)",
+                    "position": 117
+                },
+                {
+                    "station": "Marbach(Neckar)",
+                    "position": 236
+                },
+                {
+                    "station": "Benningen(Neckar)",
+                    "position": 270
+                },
+                {
+                    "station": "Freiberg(Neckar)",
+                    "position": 321
+                },
+                {
+                    "station": "Favoritepark",
+                    "position": 356
+                },
+                {
+                    "station": "Ludwigsburg",
+                    "position": 407
+                },
+                {
+                    "station": "Kornwestheim Pbf",
+                    "position": 458
+                },
+                {
+                    "station": "Stuttgart-Zuffenhausen",
+                    "position": 509
+                },
+                {
+                    "station": "Stuttgart-Feuerbach",
+                    "position": 543
+                },
+                {
+                    "station": "Stuttgart Nord",
+                    "position": 577
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 629
+                },
+                {
+                    "station": "Stuttgart Stadtmitte",
+                    "position": 646
+                },
+                {
+                    "station": "Stuttgart Feuersee",
+                    "position": 663
+                },
+                {
+                    "station": "Stuttgart Schwabstr.",
+                    "position": 697
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Schorndorf",
+                    "position": -3
+                },
+                {
+                    "station": "Weiler(Rems)",
+                    "position": 42
+                },
+                {
+                    "station": "Winterbach(b Schorndorf)",
+                    "position": 72
+                },
+                {
+                    "station": "Geradstetten",
+                    "position": 117
+                },
+                {
+                    "station": "Grunbach",
+                    "position": 147
+                },
+                {
+                    "station": "Beutelsbach",
+                    "position": 177
+                },
+                {
+                    "station": "Endersbach",
+                    "position": 207
+                },
+                {
+                    "station": "Stetten-Beinstein",
+                    "position": 237
+                },
+                {
+                    "station": "Rommelshausen",
+                    "position": 267
+                },
+                {
+                    "station": "Waiblingen",
+                    "position": 297
+                },
+                {
+                    "station": "Fellbach",
+                    "position": 327
+                },
+                {
+                    "station": "Stuttgart-Sommerrain",
+                    "position": 357
+                },
+                {
+                    "station": "Stuttgart Nürnberger Str.",
+                    "position": 387
+                },
+                {
+                    "station": "Stuttgart-Bad Cannstatt",
+                    "position": 417
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 477
+                },
+                {
+                    "station": "Stuttgart Stadtmitte",
+                    "position": 507
+                },
+                {
+                    "station": "Stuttgart Feuersee",
+                    "position": 522
+                },
+                {
+                    "station": "Stuttgart Schwabstr.",
+                    "position": 537
+                },
+                {
+                    "station": "Stuttgart Universität",
+                    "position": 612
+                },
+                {
+                    "station": "Stuttgart-Österfeld",
+                    "position": 642
+                },
+                {
+                    "station": "Stuttgart-Vaihingen",
+                    "position": 672
+                },
+                {
+                    "station": "Stuttgart-Rohr",
+                    "position": 687
+                },
+                {
+                    "station": "Oberaichen",
+                    "position": 717
+                },
+                {
+                    "station": "Leinfelden",
+                    "position": 747
+                },
+                {
+                    "station": "Echterdingen",
+                    "position": 792
+                },
+                {
+                    "station": "Stuttgart Flughafen/Messe",
+                    "position": 837
+                },
+                {
+                    "station": "Filderstadt",
+                    "position": 897
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Backnang",
+                    "position": -3
+                },
+                {
+                    "station": "Maubach",
+                    "position": 32
+                },
+                {
+                    "station": "Nellmersbach",
+                    "position": 68
+                },
+                {
+                    "station": "Winnenden",
+                    "position": 121
+                },
+                {
+                    "station": "Schwaikheim",
+                    "position": 156
+                },
+                {
+                    "station": "Neustadt-Hohenacker",
+                    "position": 191
+                },
+                {
+                    "station": "Waiblingen",
+                    "position": 262
+                },
+                {
+                    "station": "Fellbach",
+                    "position": 297
+                },
+                {
+                    "station": "Stuttgart-Sommerrain",
+                    "position": 332
+                },
+                {
+                    "station": "Stuttgart Nürnberger Str.",
+                    "position": 368
+                },
+                {
+                    "station": "Stuttgart-Bad Cannstatt",
+                    "position": 403
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 473
+                },
+                {
+                    "station": "Stuttgart Stadtmitte",
+                    "position": 509
+                },
+                {
+                    "station": "Stuttgart Feuersee",
+                    "position": 526
+                },
+                {
+                    "station": "Stuttgart Schwabstr.",
+                    "position": 544
+                },
+                {
+                    "station": "Stuttgart Universität",
+                    "position": 632
+                },
+                {
+                    "station": "Stuttgart-Österfeld",
+                    "position": 668
+                },
+                {
+                    "station": "Stuttgart-Vaihingen",
+                    "position": 703
+                },
+                {
+                    "station": "Stuttgart-Rohr",
+                    "position": 721
+                },
+                {
+                    "station": "Oberaichen",
+                    "position": 756
+                },
+                {
+                    "station": "Leinfelden",
+                    "position": 791
+                },
+                {
+                    "station": "Echterdingen",
+                    "position": 844
+                },
+                {
+                    "station": "Stuttgart Flughafen/Messe",
+                    "position": 897
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Bietigheim-Bissingen",
+                    "position": -3
+                },
+                {
+                    "station": "Tamm(Württ)",
+                    "position": 69
+                },
+                {
+                    "station": "Asperg",
+                    "position": 117
+                },
+                {
+                    "station": "Ludwigsburg",
+                    "position": 189
+                },
+                {
+                    "station": "Kornwestheim Pbf",
+                    "position": 261
+                },
+                {
+                    "station": "Stuttgart-Zuffenhausen",
+                    "position": 333
+                },
+                {
+                    "station": "Stuttgart-Feuerbach",
+                    "position": 381
+                },
+                {
+                    "station": "Stuttgart Nord",
+                    "position": 429
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 501
+                },
+                {
+                    "station": "Stuttgart Stadtmitte",
+                    "position": 525
+                },
+                {
+                    "station": "Stuttgart Feuersee",
+                    "position": 549
+                },
+                {
+                    "station": "Stuttgart Schwabstr.",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Weil der Stadt",
+                    "position": -3
+                },
+                {
+                    "station": "Malmsheim",
+                    "position": 30
+                },
+                {
+                    "station": "Renningen",
+                    "position": 64
+                },
+                {
+                    "station": "Rutesheim",
+                    "position": 114
+                },
+                {
+                    "station": "Leonberg",
+                    "position": 164
+                },
+                {
+                    "station": "Höfingen",
+                    "position": 214
+                },
+                {
+                    "station": "Ditzingen",
+                    "position": 264
+                },
+                {
+                    "station": "Weilimdorf",
+                    "position": 297
+                },
+                {
+                    "station": "Korntal",
+                    "position": 347
+                },
+                {
+                    "station": "Neuwirtshaus(Porscheplatz)",
+                    "position": 380
+                },
+                {
+                    "station": "Stuttgart-Zuffenhausen",
+                    "position": 414
+                },
+                {
+                    "station": "Stuttgart-Feuerbach",
+                    "position": 447
+                },
+                {
+                    "station": "Stuttgart Nord",
+                    "position": 480
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 530
+                },
+                {
+                    "station": "Stuttgart Stadtmitte",
+                    "position": 547
+                },
+                {
+                    "station": "Stuttgart Feuersee",
+                    "position": 564
+                },
+                {
+                    "station": "Stuttgart Schwabstr.",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Mannheim Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Mannheim-Neckarau",
+                    "position": 44
+                },
+                {
+                    "station": "Mannheim-Rheinau",
+                    "position": 91
+                },
+                {
+                    "station": "Schwetzingen",
+                    "position": 138
+                },
+                {
+                    "station": "Oftersheim",
+                    "position": 162
+                },
+                {
+                    "station": "Hockenheim",
+                    "position": 221
+                },
+                {
+                    "station": "Neulußheim",
+                    "position": 256
+                },
+                {
+                    "station": "Waghäusel",
+                    "position": 303
+                },
+                {
+                    "station": "Wiesental",
+                    "position": 338
+                },
+                {
+                    "station": "Graben-Neudorf",
+                    "position": 397
+                },
+                {
+                    "station": "Friedrichstal(Baden)",
+                    "position": 456
+                },
+                {
+                    "station": "Blankenloch",
+                    "position": 491
+                },
+                {
+                    "station": "Karlsruhe-Hagsfeld",
+                    "position": 538
+                },
+                {
+                    "station": "Karlsruhe Hbf",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Kirchheim(Teck)",
+                    "position": -3
+                },
+                {
+                    "station": "Kirchheim(Teck)-Ötlingen",
+                    "position": 33
+                },
+                {
+                    "station": "Wendlingen(Neckar)",
+                    "position": 93
+                },
+                {
+                    "station": "Wernau(Neckar)",
+                    "position": 129
+                },
+                {
+                    "station": "Plochingen",
+                    "position": 177
+                },
+                {
+                    "station": "Altbach",
+                    "position": 201
+                },
+                {
+                    "station": "Esslingen-Zell",
+                    "position": 225
+                },
+                {
+                    "station": "Oberesslingen",
+                    "position": 261
+                },
+                {
+                    "station": "Esslingen(Neckar)",
+                    "position": 285
+                },
+                {
+                    "station": "Esslingen-Mettingen",
+                    "position": 309
+                },
+                {
+                    "station": "Stuttgart-Obertürkheim",
+                    "position": 333
+                },
+                {
+                    "station": "Stuttgart-Untertürkheim",
+                    "position": 369
+                },
+                {
+                    "station": "Stuttgart Neckarpark (Mercedes-Benz)",
+                    "position": 393
+                },
+                {
+                    "station": "Stuttgart-Bad Cannstatt",
+                    "position": 429
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 477
+                },
+                {
+                    "station": "Stuttgart Stadtmitte",
+                    "position": 501
+                },
+                {
+                    "station": "Stuttgart Feuersee",
+                    "position": 513
+                },
+                {
+                    "station": "Stuttgart Schwabstr.",
+                    "position": 525
+                },
+                {
+                    "station": "Stuttgart Universität",
+                    "position": 585
+                },
+                {
+                    "station": "Stuttgart-Österfeld",
+                    "position": 609
+                },
+                {
+                    "station": "Stuttgart-Vaihingen",
+                    "position": 633
+                },
+                {
+                    "station": "Stuttgart-Rohr",
+                    "position": 645
+                },
+                {
+                    "station": "Goldberg(Württ)",
+                    "position": 705
+                },
+                {
+                    "station": "Böblingen",
+                    "position": 729
+                },
+                {
+                    "station": "Hulb",
+                    "position": 753
+                },
+                {
+                    "station": "Ehningen(b Böblingen)",
+                    "position": 789
+                },
+                {
+                    "station": "Gärtringen",
+                    "position": 825
+                },
+                {
+                    "station": "Nufringen",
+                    "position": 849
+                },
+                {
+                    "station": "Herrenberg",
+                    "position": 897
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Mannheim Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Heidelberg Hbf",
+                    "position": 97
+                },
+                {
+                    "station": "Eberbach",
+                    "position": 297
+                },
+                {
+                    "station": "Mosbach-Neckarelz",
+                    "position": 405
+                },
+                {
+                    "station": "Bad Friedrichshall Hbf",
+                    "position": 514
+                },
+                {
+                    "station": "Neckarsulm",
+                    "position": 555
+                },
+                {
+                    "station": "Heilbronn Hbf",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Mainz Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Worms Hbf",
+                    "position": 168
+                },
+                {
+                    "station": "Frankenthal Hbf",
+                    "position": 208
+                },
+                {
+                    "station": "Ludwigshafen(Rh)Hbf",
+                    "position": 261
+                },
+                {
+                    "station": "Schifferstadt",
+                    "position": 320
+                },
+                {
+                    "station": "Speyer Hbf",
+                    "position": 360
+                },
+                {
+                    "station": "Germersheim",
+                    "position": 412
+                },
+                {
+                    "station": "Philippsburg(Baden)",
+                    "position": 465
+                },
+                {
+                    "station": "Graben-Neudorf",
+                    "position": 518
+                },
+                {
+                    "station": "Karlsruhe Hbf",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Karlsruhe Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Karlsruhe West",
+                    "position": 48
+                },
+                {
+                    "station": "Karlsruhe-Mühlburg",
+                    "position": 68
+                },
+                {
+                    "station": "Karlsruhe-Knielingen",
+                    "position": 98
+                },
+                {
+                    "station": "Maximiliansau West",
+                    "position": 159
+                },
+                {
+                    "station": "Wörth(Rhein)",
+                    "position": 180
+                },
+                {
+                    "station": "Wörth(Rhein) Mozartstraße",
+                    "position": 210
+                },
+                {
+                    "station": "Kandel",
+                    "position": 261
+                },
+                {
+                    "station": "Winden(Pfalz)",
+                    "position": 322
+                },
+                {
+                    "station": "Steinweiler",
+                    "position": 352
+                },
+                {
+                    "station": "Rohrbach(Pfalz)",
+                    "position": 383
+                },
+                {
+                    "station": "Insheim",
+                    "position": 423
+                },
+                {
+                    "station": "Landau(Pfalz)Hbf",
+                    "position": 474
+                },
+                {
+                    "station": "Knöringen-Essingen",
+                    "position": 525
+                },
+                {
+                    "station": "Edesheim(Pfalz)",
+                    "position": 555
+                },
+                {
+                    "station": "Edenkoben",
+                    "position": 585
+                },
+                {
+                    "station": "Maikammer-Kirrweiler",
+                    "position": 616
+                },
+                {
+                    "station": "Neustadt(Weinstr) Süd",
+                    "position": 667
+                },
+                {
+                    "station": "Neustadt(Weinstr)Hbf",
+                    "position": 697
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Mannheim Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Heidelberg Hbf",
+                    "position": 113
+                },
+                {
+                    "station": "Meckesheim",
+                    "position": 171
+                },
+                {
+                    "station": "Sinsheim(Elsenz) Hbf",
+                    "position": 239
+                },
+                {
+                    "station": "Steinsfurt",
+                    "position": 278
+                },
+                {
+                    "station": "Bad Rappenau",
+                    "position": 394
+                },
+                {
+                    "station": "Bad Wimpfen",
+                    "position": 462
+                },
+                {
+                    "station": "Bad Friedrichshall Hbf",
+                    "position": 500
+                },
+                {
+                    "station": "Neckarsulm",
+                    "position": 549
+                },
+                {
+                    "station": "Heilbronn Hbf",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Mannheim Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Mannheim-Neckarau",
+                    "position": 44
+                },
+                {
+                    "station": "Mannheim-Rheinau",
+                    "position": 91
+                },
+                {
+                    "station": "Schwetzingen",
+                    "position": 138
+                },
+                {
+                    "station": "Oftersheim",
+                    "position": 162
+                },
+                {
+                    "station": "Hockenheim",
+                    "position": 221
+                },
+                {
+                    "station": "Neulußheim",
+                    "position": 256
+                },
+                {
+                    "station": "Waghäusel",
+                    "position": 303
+                },
+                {
+                    "station": "Wiesental",
+                    "position": 338
+                },
+                {
+                    "station": "Graben-Neudorf",
+                    "position": 397
+                },
+                {
+                    "station": "Friedrichstal(Baden)",
+                    "position": 456
+                },
+                {
+                    "station": "Blankenloch",
+                    "position": 491
+                },
+                {
+                    "station": "Karlsruhe-Hagsfeld",
+                    "position": 538
+                },
+                {
+                    "station": "Karlsruhe Hbf",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Karlsruhe Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Ettlingen West",
+                    "position": 24
+                },
+                {
+                    "station": "Bruchhausen(b Ettlingen)",
+                    "position": 39
+                },
+                {
+                    "station": "Malsch",
+                    "position": 62
+                },
+                {
+                    "station": "Muggensturm",
+                    "position": 77
+                },
+                {
+                    "station": "Rastatt",
+                    "position": 98
+                },
+                {
+                    "station": "Baden-Baden Haueneberstein",
+                    "position": 125
+                },
+                {
+                    "station": "Baden-Baden",
+                    "position": 141
+                },
+                {
+                    "station": "Sinzheim",
+                    "position": 152
+                },
+                {
+                    "station": "Sinzheim Nord",
+                    "position": 162
+                },
+                {
+                    "station": "Baden-Baden Rebland",
+                    "position": 179
+                },
+                {
+                    "station": "Bühl(Baden)",
+                    "position": 200
+                },
+                {
+                    "station": "Achern",
+                    "position": 237
+                },
+                {
+                    "station": "Renchen",
+                    "position": 258
+                },
+                {
+                    "station": "Appenweier",
+                    "position": 279
+                },
+                {
+                    "station": "Offenburg",
+                    "position": 306
+                },
+                {
+                    "station": "Friesenheim(Baden)",
+                    "position": 344
+                },
+                {
+                    "station": "Lahr(Schwarzw)",
+                    "position": 359
+                },
+                {
+                    "station": "Orschweier",
+                    "position": 386
+                },
+                {
+                    "station": "Ringsheim",
+                    "position": 396
+                },
+                {
+                    "station": "Herbolzheim(Breisg)",
+                    "position": 407
+                },
+                {
+                    "station": "Kenzingen",
+                    "position": 423
+                },
+                {
+                    "station": "Riegel am Kaiserstuhl Ort",
+                    "position": 444
+                },
+                {
+                    "station": "Köndringen",
+                    "position": 455
+                },
+                {
+                    "station": "Teningen-Mundingen",
+                    "position": 465
+                },
+                {
+                    "station": "Emmendingen",
+                    "position": 477
+                },
+                {
+                    "station": "Kollmarsreute",
+                    "position": 492
+                },
+                {
+                    "station": "Denzlingen",
+                    "position": 509
+                },
+                {
+                    "station": "Gundelfingen(Breisgau)",
+                    "position": 524
+                },
+                {
+                    "station": "Freiburg-Zähringen",
+                    "position": 540
+                },
+                {
+                    "station": "Freiburg-Herdern",
+                    "position": 551
+                },
+                {
+                    "station": "Freiburg(Breisgau) Hbf",
+                    "position": 561
+                },
+                {
+                    "station": "Freiburg-St Georgen",
+                    "position": 584
+                },
+                {
+                    "station": "Ebringen",
+                    "position": 599
+                },
+                {
+                    "station": "Schallstadt",
+                    "position": 609
+                },
+                {
+                    "station": "Norsingen",
+                    "position": 626
+                },
+                {
+                    "station": "Bad Krozingen",
+                    "position": 642
+                },
+                {
+                    "station": "Heitersheim",
+                    "position": 663
+                },
+                {
+                    "station": "Buggingen",
+                    "position": 678
+                },
+                {
+                    "station": "Müllheim(Baden)",
+                    "position": 705
+                },
+                {
+                    "station": "Auggen",
+                    "position": 716
+                },
+                {
+                    "station": "Schliengen",
+                    "position": 726
+                },
+                {
+                    "station": "Bad Bellingen",
+                    "position": 743
+                },
+                {
+                    "station": "Rheinweiler",
+                    "position": 759
+                },
+                {
+                    "station": "Kleinkems",
+                    "position": 774
+                },
+                {
+                    "station": "Istein",
+                    "position": 797
+                },
+                {
+                    "station": "Efringen-Kirchen",
+                    "position": 807
+                },
+                {
+                    "station": "Eimeldingen",
+                    "position": 822
+                },
+                {
+                    "station": "Haltingen",
+                    "position": 833
+                },
+                {
+                    "station": "Weil am Rhein",
+                    "position": 843
+                },
+                {
+                    "station": "Basel Bad Bf",
+                    "position": 870
+                },
+                {
+                    "station": "Basel SBB",
+                    "position": 897
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Mainz Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Mainz Römisches Theater",
+                    "position": 23
+                },
+                {
+                    "station": "Mainz-Laubenheim",
+                    "position": 57
+                },
+                {
+                    "station": "Bodenheim",
+                    "position": 83
+                },
+                {
+                    "station": "Nackenheim",
+                    "position": 108
+                },
+                {
+                    "station": "Nierstein",
+                    "position": 143
+                },
+                {
+                    "station": "Oppenheim",
+                    "position": 160
+                },
+                {
+                    "station": "Guntersblum",
+                    "position": 203
+                },
+                {
+                    "station": "Alsheim",
+                    "position": 228
+                },
+                {
+                    "station": "Mettenheim",
+                    "position": 246
+                },
+                {
+                    "station": "Osthofen",
+                    "position": 271
+                },
+                {
+                    "station": "Worms Hbf",
+                    "position": 331
+                },
+                {
+                    "station": "Bobenheim",
+                    "position": 366
+                },
+                {
+                    "station": "Frankenthal Hbf",
+                    "position": 400
+                },
+                {
+                    "station": "Ludwigshafen-Oggersheim",
+                    "position": 434
+                },
+                {
+                    "station": "Ludwigshafen(Rh)Hbf",
+                    "position": 468
+                },
+                {
+                    "station": "Ludwigshafen(Rhein) Mitte",
+                    "position": 486
+                },
+                {
+                    "station": "Mannheim Hbf",
+                    "position": 511
+                },
+                {
+                    "station": "Mannheim-Friedrichsfeld",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Mannheim Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Heidelberg Hbf",
+                    "position": 71
+                },
+                {
+                    "station": "Wiesloch-Walldorf",
+                    "position": 115
+                },
+                {
+                    "station": "Bad Schönborn-Kronau",
+                    "position": 145
+                },
+                {
+                    "station": "Bruchsal",
+                    "position": 189
+                },
+                {
+                    "station": "Bretten",
+                    "position": 257
+                },
+                {
+                    "station": "Mühlacker",
+                    "position": 331
+                },
+                {
+                    "station": "Mühlacker Rößlesweg",
+                    "position": 337
+                },
+                {
+                    "station": "Illingen(Württ)",
+                    "position": 362
+                },
+                {
+                    "station": "Vaihingen(Enz)",
+                    "position": 381
+                },
+                {
+                    "station": "Sersheim",
+                    "position": 405
+                },
+                {
+                    "station": "Sachsenheim",
+                    "position": 424
+                },
+                {
+                    "station": "Ellental",
+                    "position": 449
+                },
+                {
+                    "station": "Bietigheim-Bissingen",
+                    "position": 461
+                },
+                {
+                    "station": "Ludwigsburg",
+                    "position": 517
+                },
+                {
+                    "station": "Stuttgart Hbf",
+                    "position": 597
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Saarbrücken Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Saarbrücken Ost",
+                    "position": 24
+                },
+                {
+                    "station": "Schafbrücke",
+                    "position": 42
+                },
+                {
+                    "station": "Scheidt(Saar)",
+                    "position": 59
+                },
+                {
+                    "station": "Rentrisch",
+                    "position": 77
+                },
+                {
+                    "station": "St Ingbert",
+                    "position": 104
+                },
+                {
+                    "station": "Rohrbach(Saar)",
+                    "position": 131
+                },
+                {
+                    "station": "Kirkel",
+                    "position": 157
+                },
+                {
+                    "station": "Limbach(b Homburg,Saar)",
+                    "position": 184
+                },
+                {
+                    "station": "Homburg(Saar)Hbf",
+                    "position": 220
+                },
+                {
+                    "station": "Bruchmühlbach-Miesau",
+                    "position": 273
+                },
+                {
+                    "station": "Hauptstuhl",
+                    "position": 300
+                },
+                {
+                    "station": "Landstuhl",
+                    "position": 327
+                },
+                {
+                    "station": "Kindsbach",
+                    "position": 353
+                },
+                {
+                    "station": "Einsiedlerhof",
+                    "position": 380
+                },
+                {
+                    "station": "Vogelweh",
+                    "position": 407
+                },
+                {
+                    "station": "Kennelgarten",
+                    "position": 425
+                },
+                {
+                    "station": "Kaiserslautern Hbf",
+                    "position": 451
+                },
+                {
+                    "station": "Hochspeyer",
+                    "position": 505
+                },
+                {
+                    "station": "Frankenstein(Pfalz)",
+                    "position": 541
+                },
+                {
+                    "station": "Weidenthal",
+                    "position": 567
+                },
+                {
+                    "station": "Neidenfels",
+                    "position": 603
+                },
+                {
+                    "station": "Lambrecht(Pfalz)",
+                    "position": 621
+                },
+                {
+                    "station": "Neustadt(Weinstr)Hbf",
+                    "position": 665
+                },
+                {
+                    "station": "Neustadt-Böbig",
+                    "position": 674
+                },
+                {
+                    "station": "Haßloch(Pfalz)",
+                    "position": 710
+                },
+                {
+                    "station": "Böhl-Iggelheim",
+                    "position": 737
+                },
+                {
+                    "station": "Schifferstadt",
+                    "position": 763
+                },
+                {
+                    "station": "Limburgerhof",
+                    "position": 790
+                },
+                {
+                    "station": "Ludwigshafen-Rheingönheim",
+                    "position": 817
+                },
+                {
+                    "station": "Ludwigshafen-Mundenheim",
+                    "position": 835
+                },
+                {
+                    "station": "Ludwigshafen(Rh)Hbf",
+                    "position": 852
+                },
+                {
+                    "station": "Ludwigshafen(Rhein) Mitte",
+                    "position": 870
+                },
+                {
+                    "station": "Mannheim Hbf",
+                    "position": 897
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Mannheim Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Mannheim Handelshafen",
+                    "position": 36
+                },
+                {
+                    "station": "Mannheim-Neckarstadt",
+                    "position": 61
+                },
+                {
+                    "station": "Mannheim-Luzenberg",
+                    "position": 87
+                },
+                {
+                    "station": "Mannheim-Waldhof",
+                    "position": 113
+                },
+                {
+                    "station": "Lampertheim",
+                    "position": 177
+                },
+                {
+                    "station": "Bürstadt",
+                    "position": 216
+                },
+                {
+                    "station": "Bobstadt",
+                    "position": 241
+                },
+                {
+                    "station": "Biblis",
+                    "position": 293
+                },
+                {
+                    "station": "Groß Rohrheim",
+                    "position": 331
+                },
+                {
+                    "station": "Gernsheim",
+                    "position": 383
+                },
+                {
+                    "station": "Biebesheim",
+                    "position": 421
+                },
+                {
+                    "station": "Stockstadt(Rhein)",
+                    "position": 460
+                },
+                {
+                    "station": "Riedstadt-Goddelau",
+                    "position": 498
+                },
+                {
+                    "station": "Riedstadt-Wolfskehlen",
+                    "position": 524
+                },
+                {
+                    "station": "Groß Gerau-Dornheim",
+                    "position": 550
+                },
+                {
+                    "station": "Groß Gerau-Dornberg",
+                    "position": 588
+                },
+                {
+                    "station": "Mörfelden",
+                    "position": 653
+                },
+                {
+                    "station": "Walldorf(Hess)",
+                    "position": 678
+                },
+                {
+                    "station": "Zeppelinheim",
+                    "position": 730
+                },
+                {
+                    "station": "Frankfurt am Main - Stadion",
+                    "position": 781
+                },
+                {
+                    "station": "Frankfurt-Niederrad",
+                    "position": 820
+                },
+                {
+                    "station": "Frankfurt(Main)Hbf",
+                    "position": 897
+                }
+            ]
+        },
+        {
+            "url": "https://www.zugfinder.de/kbs.php?kbs=770",
+            "stations": [{
+                    "station": "Karlsruhe Hbf",
+                    "position": -3
+                },
+                {
+                    "station": "Karlsruhe-Durlach",
+                    "position": 61
+                },
+                {
+                    "station": "Weingarten(Baden)",
+                    "position": 137
+                },
+                {
+                    "station": "Untergrombach",
+                    "position": 188
+                },
+                {
+                    "station": "Bruchsal Bildungszentrum",
+                    "position": 227
+                },
+                {
+                    "station": "Bruchsal",
+                    "position": 252
+                },
+                {
+                    "station": "Ubstadt-Weiher",
+                    "position": 303
+                },
+                {
+                    "station": "Bad Schönborn Süd",
+                    "position": 342
+                },
+                {
+                    "station": "Bad Schönborn-Kronau",
+                    "position": 367
+                },
+                {
+                    "station": "Rot-Malsch",
+                    "position": 406
+                },
+                {
+                    "station": "Wiesloch-Walldorf",
+                    "position": 457
+                },
+                {
+                    "station": "St Ilgen-Sandhausen",
+                    "position": 508
+                },
+                {
+                    "station": "Heidelberg-Kirchheim/Rohrbach",
+                    "position": 546
+                },
+                {
+                    "station": "Heidelberg Hbf",
+                    "position": 597
+                }
+            ]
+        }
+    ]
 }

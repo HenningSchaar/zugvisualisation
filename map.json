@@ -1,28 +1,2036 @@
 {
-    "towns": [
-        "Stuttgart", "Karlsruhe", "Mannheim", "Freiburg im Breisgaru", "Heidelberg", "Ulm", "Heilbronn", "Pforzheim", "Reutlingen", "Esslingen am Neckar", "Ludwigsburg", "Tübingen", "Villingen-Schwenningen", "Konstanz", "Aalen", "Sindelfingen", "Schwäbisch Gmünd", "Friedrichshafen", "Offenburg", "Göppingen", "Waiblingen", "Baden-Baden", "Ravensburg", "Böblingen", "Rastatt", "Heidenheim an der Brenz", "Lörrach", "Leonberg", "Singen", "Lahr/Schwarzwald", "Filderstadt", "Fellbach", "Albstadt", "Weinheim", "Bruchsal", "Rottenburg am Neckar", "Bietigheim-Bissingen", "Nürtingen"
-    ],
-    "routes": [
-        "https://www.zugfinder.de/kbs.php?kbs=770",
-        "https://www.zugfinder.de/kbs.php?kbs=740",
-        "https://www.zugfinder.de/kbs.php?kbs=790.6b",
-        "https://www.zugfinder.de/kbs.php?kbs=790.6a",
-        "https://www.zugfinder.de/kbs.php?kbs=790.5",
-        "https://www.zugfinder.de/kbs.php?kbs=790.4",
-        "https://www.zugfinder.de/kbs.php?kbs=790.3",
-        "https://www.zugfinder.de/kbs.php?kbs=790.2",
-        "https://www.zugfinder.de/kbs.php?kbs=790.1",
-        "https://www.zugfinder.de/kbs.php?kbs=676",
-        "https://www.zugfinder.de/kbs.php?kbs=700",
-        "https://www.zugfinder.de/kbs.php?kbs=659",
-        "https://www.zugfinder.de/kbs.php?kbs=700",
-        "https://www.zugfinder.de/kbs.php?kbs=701",
-        "https://www.zugfinder.de/kbs.php?kbs=702",
-        "https://www.zugfinder.de/kbs.php?kbs=655",
-        "https://www.zugfinder.de/kbs.php?kbs=660",
-        "https://www.zugfinder.de/kbs.php?kbs=670",
-        "https://www.zugfinder.de/kbs.php?kbs=705a",
-        "https://www.zugfinder.de/kbs.php?kbs=705b",
-        "https://www.zugfinder.de/kbs.php?kbs=771"
-    ]
+	"stations": [
+		{
+			"name": "Achern",
+			"coordinates": {
+				"lat": 48.6266194,
+				"lng": 8.0749207
+			}
+		},
+		{
+			"name": "Bad Friedrichshall Hbf",
+			"coordinates": {
+				"lat": 49.23157880000001,
+				"lng": 9.200556299999999
+			}
+		},
+		{
+			"name": "Backnang",
+			"coordinates": {
+				"lat": 48.9471455,
+				"lng": 9.434181299999999
+			}
+		},
+		{
+			"name": "Baden-Baden",
+			"coordinates": {
+				"lat": 48.76564,
+				"lng": 8.228524199999999
+			}
+		},
+		{
+			"name": "Auggen",
+			"coordinates": {
+				"lat": 47.78808,
+				"lng": 7.5909732
+			}
+		},
+		{
+			"name": "Baden-Baden Haueneberstein",
+			"coordinates": {
+				"lat": 48.8063638,
+				"lng": 8.222238
+			}
+		},
+		{
+			"name": "Bürstadt",
+			"coordinates": {
+				"lat": 49.6441767,
+				"lng": 8.4617953
+			}
+		},
+		{
+			"name": "Frankfurt(Main)Hbf",
+			"coordinates": {
+				"lat": 50.10652899999999,
+				"lng": 8.6621618
+			}
+		},
+		{
+			"name": "Frankfurt-Niederrad",
+			"coordinates": {
+				"lat": 50.083698,
+				"lng": 8.6443596
+			}
+		},
+		{
+			"name": "Frankenthal Hbf",
+			"coordinates": {
+				"lat": 49.53593009999999,
+				"lng": 8.349643100000002
+			}
+		},
+		{
+			"name": "Freiburg-Herdern",
+			"coordinates": {
+				"lat": 48.0068779,
+				"lng": 7.8748446
+			}
+		},
+		{
+			"name": "Freiburg(Breisgau) Hbf",
+			"coordinates": {
+				"lat": 47.9965876,
+				"lng": 7.840423200000001
+			}
+		},
+		{
+			"name": "Friesenheim(Baden)",
+			"coordinates": {
+				"lat": 48.3734167,
+				"lng": 7.883617500000001
+			}
+		},
+		{
+			"name": "Friedrichstal(Baden)",
+			"coordinates": {
+				"lat": 49.10459059999999,
+				"lng": 8.4762984
+			}
+		},
+		{
+			"name": "Goldberg(Württ)",
+			"coordinates": {
+				"lat": 48.6972655,
+				"lng": 9.0209686
+			}
+		},
+		{
+			"name": "Graben-Neudorf",
+			"coordinates": {
+				"lat": 49.1605184,
+				"lng": 8.484947199999999
+			}
+		},
+		{
+			"name": "Freiburg-Zähringen",
+			"coordinates": {
+				"lat": 48.02237909999999,
+				"lng": 7.866911500000001
+			}
+		},
+		{
+			"name": "Gundelfingen(Breisgau)",
+			"coordinates": {
+				"lat": 48.0424069,
+				"lng": 7.866946599999999
+			}
+		},
+		{
+			"name": "Gernsheim",
+			"coordinates": {
+				"lat": 49.7574082,
+				"lng": 8.4885231
+			}
+		},
+		{
+			"name": "Freiburg-St Georgen",
+			"coordinates": {
+				"lat": 47.9806275,
+				"lng": 7.7850641
+			}
+		},
+		{
+			"name": "Mannheim-Neckarau",
+			"coordinates": {
+				"lat": 49.4542902,
+				"lng": 8.4906118
+			}
+		},
+		{
+			"name": "Mannheim-Rheinau",
+			"coordinates": {
+				"lat": 49.4320257,
+				"lng": 8.527523799999999
+			}
+		},
+		{
+			"name": "Mannheim-Luzenberg",
+			"coordinates": {
+				"lat": 49.516564,
+				"lng": 8.4797668
+			}
+		},
+		{
+			"name": "Marbach(Neckar)",
+			"coordinates": {
+				"lat": 48.939615,
+				"lng": 9.2645971
+			}
+		},
+		{
+			"name": "Maximiliansau West",
+			"coordinates": {
+				"lat": 49.0389089,
+				"lng": 8.2918992
+			}
+		},
+		{
+			"name": "Mettenheim",
+			"coordinates": {
+				"lat": 48.26556979999999,
+				"lng": 12.464053
+			}
+		},
+		{
+			"name": "Mosbach-Neckarelz",
+			"coordinates": {
+				"lat": 49.33931399999999,
+				"lng": 9.1215615
+			}
+		},
+		{
+			"name": "Maubach",
+			"coordinates": {
+				"lat": 48.92306900000001,
+				"lng": 9.43038
+			}
+		},
+		{
+			"name": "Meckesheim",
+			"coordinates": {
+				"lat": 49.3207046,
+				"lng": 8.814741999999999
+			}
+		},
+		{
+			"name": "Mühlacker",
+			"coordinates": {
+				"lat": 48.948938,
+				"lng": 8.8524245
+			}
+		},
+		{
+			"name": "Nackenheim",
+			"coordinates": {
+				"lat": 49.9179408,
+				"lng": 8.339467899999999
+			}
+		},
+		{
+			"name": "Muggensturm",
+			"coordinates": {
+				"lat": 48.8696412,
+				"lng": 8.2767765
+			}
+		},
+		{
+			"name": "Mörfelden",
+			"coordinates": {
+				"lat": 49.980722,
+				"lng": 8.561487
+			}
+		},
+		{
+			"name": "Oftersheim",
+			"coordinates": {
+				"lat": 49.3702809,
+				"lng": 8.5838662
+			}
+		},
+		{
+			"name": "Osthofen",
+			"coordinates": {
+				"lat": 49.7033893,
+				"lng": 8.3238601
+			}
+		},
+		{
+			"name": "Orschweier",
+			"coordinates": {
+				"lat": 48.2756465,
+				"lng": 7.7951614
+			}
+		},
+		{
+			"name": "Renningen",
+			"coordinates": {
+				"lat": 48.7716629,
+				"lng": 8.9343956
+			}
+		},
+		{
+			"name": "Philippsburg(Baden)",
+			"coordinates": {
+				"lat": 49.2352532,
+				"lng": 8.458036
+			}
+		},
+		{
+			"name": "Rentrisch",
+			"coordinates": {
+				"lat": 49.2648831,
+				"lng": 7.0850535
+			}
+		},
+		{
+			"name": "Renchen",
+			"coordinates": {
+				"lat": 48.5862352,
+				"lng": 8.011880699999999
+			}
+		},
+		{
+			"name": "Rastatt",
+			"coordinates": {
+				"lat": 48.8591174,
+				"lng": 8.2059096
+			}
+		},
+		{
+			"name": "Renningen Süd",
+			"coordinates": {
+				"lat": 48.7716629,
+				"lng": 8.9343956
+			}
+		},
+		{
+			"name": "Schallstadt",
+			"coordinates": {
+				"lat": 47.9592778,
+				"lng": 7.757092800000001
+			}
+		},
+		{
+			"name": "Sinzheim",
+			"coordinates": {
+				"lat": 48.7623559,
+				"lng": 8.1688685
+			}
+		},
+		{
+			"name": "Sersheim",
+			"coordinates": {
+				"lat": 48.9588468,
+				"lng": 9.012917
+			}
+		},
+		{
+			"name": "Singen(Hohentwiel)",
+			"coordinates": {
+				"lat": 47.7670971,
+				"lng": 8.8722387
+			}
+		},
+		{
+			"name": "Sinsheim(Elsenz) Hbf",
+			"coordinates": {
+				"lat": 49.2501557,
+				"lng": 8.8755855
+			}
+		},
+		{
+			"name": "St Ilgen-Sandhausen",
+			"coordinates": {
+				"lat": 49.341152,
+				"lng": 8.6688758
+			}
+		},
+		{
+			"name": "Sinzheim Nord",
+			"coordinates": {
+				"lat": 48.7623559,
+				"lng": 8.1688685
+			}
+		},
+		{
+			"name": "Speyer Hbf",
+			"coordinates": {
+				"lat": 49.3241174,
+				"lng": 8.4283285
+			}
+		},
+		{
+			"name": "Sindelfingen",
+			"coordinates": {
+				"lat": 48.7074558,
+				"lng": 9.0044053
+			}
+		},
+		{
+			"name": "Kirkel",
+			"coordinates": {
+				"lat": 49.2848014,
+				"lng": 7.231406499999999
+			}
+		},
+		{
+			"name": "Winnenden",
+			"coordinates": {
+				"lat": 48.8750046,
+				"lng": 9.397142299999999
+			}
+		},
+		{
+			"name": "Lambrecht(Pfalz)",
+			"coordinates": {
+				"lat": 49.3727201,
+				"lng": 8.0720045
+			}
+		},
+		{
+			"name": "Lahr(Schwarzw)",
+			"coordinates": {
+				"lat": 48.33915,
+				"lng": 7.8781487
+			}
+		},
+		{
+			"name": "Korntal",
+			"coordinates": {
+				"lat": 48.8463801,
+				"lng": 9.1072089
+			}
+		},
+		{
+			"name": "Landstuhl",
+			"coordinates": {
+				"lat": 49.41414640000001,
+				"lng": 7.570905199999999
+			}
+		},
+		{
+			"name": "Limburgerhof",
+			"coordinates": {
+				"lat": 49.4207609,
+				"lng": 8.3900307
+			}
+		},
+		{
+			"name": "Lampertheim",
+			"coordinates": {
+				"lat": 49.59972670000001,
+				"lng": 8.466599
+			}
+		},
+		{
+			"name": "Landau(Pfalz)Hbf",
+			"coordinates": {
+				"lat": 49.1980838,
+				"lng": 8.1258673
+			}
+		},
+		{
+			"name": "Leinfelden",
+			"coordinates": {
+				"lat": 48.6980072,
+				"lng": 9.140742699999999
+			}
+		},
+		{
+			"name": "Ludwigsburg",
+			"coordinates": {
+				"lat": 48.8940624,
+				"lng": 9.195464
+			}
+		},
+		{
+			"name": "Limbach(b Homburg,Saar)",
+			"coordinates": {
+				"lat": 49.312148,
+				"lng": 7.279126999999999
+			}
+		},
+		{
+			"name": "Leonberg",
+			"coordinates": {
+				"lat": 48.7960447,
+				"lng": 9.0095706
+			}
+		},
+		{
+			"name": "Ludwigshafen-Mundenheim",
+			"coordinates": {
+				"lat": 49.4719156,
+				"lng": 8.424614
+			}
+		},
+		{
+			"name": "Ludwigshafen-Oggersheim",
+			"coordinates": {
+				"lat": 49.4910406,
+				"lng": 8.3679951
+			}
+		},
+		{
+			"name": "Ludwigshafen(Rhein) Mitte",
+			"coordinates": {
+				"lat": 49.4790628,
+				"lng": 8.4525443
+			}
+		},
+		{
+			"name": "Riedstadt-Wolfskehlen",
+			"coordinates": {
+				"lat": 49.8550452,
+				"lng": 8.4985932
+			}
+		},
+		{
+			"name": "Riegel am Kaiserstuhl Ort",
+			"coordinates": {
+				"lat": 48.15590719999999,
+				"lng": 7.747446299999999
+			}
+		},
+		{
+			"name": "Riedstadt-Goddelau",
+			"coordinates": {
+				"lat": 49.833498,
+				"lng": 8.4937
+			}
+		},
+		{
+			"name": "Rohrbach(Pfalz)",
+			"coordinates": {
+				"lat": 49.1378332,
+				"lng": 8.132206199999999
+			}
+		},
+		{
+			"name": "Rheinweiler",
+			"coordinates": {
+				"lat": 47.7319201,
+				"lng": 7.556973999999999
+			}
+		},
+		{
+			"name": "Rommelshausen",
+			"coordinates": {
+				"lat": 48.81401899999999,
+				"lng": 9.3182543
+			}
+		},
+		{
+			"name": "Ringsheim",
+			"coordinates": {
+				"lat": 48.2459643,
+				"lng": 7.781612099999999
+			}
+		},
+		{
+			"name": "Rohrbach(Saar)",
+			"coordinates": {
+				"lat": 49.2835131,
+				"lng": 7.1618605
+			}
+		},
+		{
+			"name": "Saarbrücken Hbf",
+			"coordinates": {
+				"lat": 49.2406424,
+				"lng": 6.991
+			}
+		},
+		{
+			"name": "Rottweil",
+			"coordinates": {
+				"lat": 48.1652577,
+				"lng": 8.628453
+			}
+		},
+		{
+			"name": "Saarbrücken Ost",
+			"coordinates": {
+				"lat": 49.2305293,
+				"lng": 7.0186693
+			}
+		},
+		{
+			"name": "Stetten-Beinstein",
+			"coordinates": {
+				"lat": 48.81193409999999,
+				"lng": 9.3519999
+			}
+		},
+		{
+			"name": "St Ingbert",
+			"coordinates": {
+				"lat": 49.2774456,
+				"lng": 7.1118995
+			}
+		},
+		{
+			"name": "Spaichingen",
+			"coordinates": {
+				"lat": 48.0748189,
+				"lng": 8.7347582
+			}
+		},
+		{
+			"name": "Stockstadt(Rhein)",
+			"coordinates": {
+				"lat": 49.8074541,
+				"lng": 8.4686308
+			}
+		},
+		{
+			"name": "Steinsfurt",
+			"coordinates": {
+				"lat": 49.2390896,
+				"lng": 8.9100705
+			}
+		},
+		{
+			"name": "Steinweiler",
+			"coordinates": {
+				"lat": 49.1207457,
+				"lng": 8.1397713
+			}
+		},
+		{
+			"name": "Stuttgart Feuersee",
+			"coordinates": {
+				"lat": 48.7740801,
+				"lng": 9.163998699999999
+			}
+		},
+		{
+			"name": "Stuttgart Hbf",
+			"coordinates": {
+				"lat": 48.783206,
+				"lng": 9.182288999999999
+			}
+		},
+		{
+			"name": "Stuttgart Neckarpark (Mercedes-Benz)",
+			"coordinates": {
+				"lat": 48.7919793,
+				"lng": 9.2410526
+			}
+		},
+		{
+			"name": "Stuttgart Flughafen/Messe",
+			"coordinates": {
+				"lat": 48.6909947,
+				"lng": 9.1924064
+			}
+		},
+		{
+			"name": "Stuttgart Nord",
+			"coordinates": {
+				"lat": 48.7927231,
+				"lng": 9.1684625
+			}
+		},
+		{
+			"name": "Stuttgart Nürnberger Str.",
+			"coordinates": {
+				"lat": 48.8082412,
+				"lng": 9.2425397
+			}
+		},
+		{
+			"name": "Stuttgart Universität",
+			"coordinates": {
+				"lat": 48.7815142,
+				"lng": 9.1735818
+			}
+		},
+		{
+			"name": "Ubstadt-Weiher",
+			"coordinates": {
+				"lat": 49.1627831,
+				"lng": 8.6290693
+			}
+		},
+		{
+			"name": "Vaihingen(Enz)",
+			"coordinates": {
+				"lat": 48.9334357,
+				"lng": 8.961208000000001
+			}
+		},
+		{
+			"name": "Weidenthal",
+			"coordinates": {
+				"lat": 49.4218294,
+				"lng": 7.9906187
+			}
+		},
+		{
+			"name": "Waghäusel",
+			"coordinates": {
+				"lat": 49.2495336,
+				"lng": 8.5154348
+			}
+		},
+		{
+			"name": "Waiblingen",
+			"coordinates": {
+				"lat": 48.8293519,
+				"lng": 9.318573899999999
+			}
+		},
+		{
+			"name": "Untergrombach",
+			"coordinates": {
+				"lat": 49.08645689999999,
+				"lng": 8.5532136
+			}
+		},
+		{
+			"name": "Stuttgart-Österfeld",
+			"coordinates": {
+				"lat": 48.7373334,
+				"lng": 9.1167963
+			}
+		},
+		{
+			"name": "Weil am Rhein",
+			"coordinates": {
+				"lat": 47.5934368,
+				"lng": 7.6198121
+			}
+		},
+		{
+			"name": "Frankenstein(Pfalz)",
+			"coordinates": {
+				"lat": 49.4384427,
+				"lng": 7.978805700000001
+			}
+		},
+		{
+			"name": "Bodenheim",
+			"coordinates": {
+				"lat": 49.9292948,
+				"lng": 8.312674
+			}
+		},
+		{
+			"name": "Bietigheim-Bissingen",
+			"coordinates": {
+				"lat": 48.9471605,
+				"lng": 9.1305037
+			}
+		},
+		{
+			"name": "Denzlingen",
+			"coordinates": {
+				"lat": 48.0690429,
+				"lng": 7.8890649
+			}
+		},
+		{
+			"name": "Bruchhausen(b Ettlingen)",
+			"coordinates": {
+				"lat": 48.9239659,
+				"lng": 8.373795700000002
+			}
+		},
+		{
+			"name": "Bruchsal",
+			"coordinates": {
+				"lat": 49.1249712,
+				"lng": 8.5844107
+			}
+		},
+		{
+			"name": "Bobenheim",
+			"coordinates": {
+				"lat": 49.5811581,
+				"lng": 8.3589707
+			}
+		},
+		{
+			"name": "Burgstall(Murr)",
+			"coordinates": {
+				"lat": 48.92934899999999,
+				"lng": 9.368934
+			}
+		},
+		{
+			"name": "Bruchsal Bildungszentrum",
+			"coordinates": {
+				"lat": 49.1100488,
+				"lng": 8.5740213
+			}
+		},
+		{
+			"name": "Bühl(Baden)",
+			"coordinates": {
+				"lat": 48.6954722,
+				"lng": 8.138060399999999
+			}
+		},
+		{
+			"name": "Böblingen",
+			"coordinates": {
+				"lat": 48.6813312,
+				"lng": 9.0088299
+			}
+		},
+		{
+			"name": "Bobstadt",
+			"coordinates": {
+				"lat": 49.6632322,
+				"lng": 8.4471776
+			}
+		},
+		{
+			"name": "Bretten",
+			"coordinates": {
+				"lat": 49.0362907,
+				"lng": 8.7010592
+			}
+		},
+		{
+			"name": "Bondorf(b Herrenberg)",
+			"coordinates": {
+				"lat": 48.5234991,
+				"lng": 8.8280665
+			}
+		},
+		{
+			"name": "Buggingen",
+			"coordinates": {
+				"lat": 47.8481234,
+				"lng": 7.6374895
+			}
+		},
+		{
+			"name": "Biebesheim",
+			"coordinates": {
+				"lat": 49.7792822,
+				"lng": 8.4743923
+			}
+		},
+		{
+			"name": "Edesheim(Pfalz)",
+			"coordinates": {
+				"lat": 49.26270599999999,
+				"lng": 8.131542399999999
+			}
+		},
+		{
+			"name": "Neidenfels",
+			"coordinates": {
+				"lat": 49.3878976,
+				"lng": 8.0478226
+			}
+		},
+		{
+			"name": "Karlsruhe-Mühlburg",
+			"coordinates": {
+				"lat": 49.01580310000001,
+				"lng": 8.345768399999999
+			}
+		},
+		{
+			"name": "Oppenheim",
+			"coordinates": {
+				"lat": 49.8519223,
+				"lng": 8.3602742
+			}
+		},
+		{
+			"name": "Schifferstadt",
+			"coordinates": {
+				"lat": 39.4235215,
+				"lng": -77.42699209999999
+			}
+		},
+		{
+			"name": "Kirchheim(Teck)-Ötlingen",
+			"coordinates": {
+				"lat": 48.6570116,
+				"lng": 9.4224246
+			}
+		},
+		{
+			"name": "Kirchheim(Teck)",
+			"coordinates": {
+				"lat": 48.6471033,
+				"lng": 9.4519635
+			}
+		},
+		{
+			"name": "Kirchberg(Murr)",
+			"coordinates": {
+				"lat": 48.9425755,
+				"lng": 9.3417915
+			}
+		},
+		{
+			"name": "Kindsbach",
+			"coordinates": {
+				"lat": 49.4196013,
+				"lng": 7.621620399999999
+			}
+		},
+		{
+			"name": "Alsheim",
+			"coordinates": {
+				"lat": 49.7656803,
+				"lng": 8.3402947
+			}
+		},
+		{
+			"name": "Kennelgarten",
+			"coordinates": {
+				"lat": 49.4409252,
+				"lng": 7.733633299999999
+			}
+		},
+		{
+			"name": "Altbach",
+			"coordinates": {
+				"lat": 48.72227969999999,
+				"lng": 9.380059
+			}
+		},
+		{
+			"name": "Kenzingen",
+			"coordinates": {
+				"lat": 48.1955155,
+				"lng": 7.769684499999999
+			}
+		},
+		{
+			"name": "Karlsruhe-Hagsfeld",
+			"coordinates": {
+				"lat": 49.0297476,
+				"lng": 8.4613212
+			}
+		},
+		{
+			"name": "Freiberg(Neckar)",
+			"coordinates": {
+				"lat": 48.9334303,
+				"lng": 9.1992433
+			}
+		},
+		{
+			"name": "Bad Wimpfen",
+			"coordinates": {
+				"lat": 49.22850409999999,
+				"lng": 9.157138699999999
+			}
+		},
+		{
+			"name": "Bad Bellingen",
+			"coordinates": {
+				"lat": 47.7319201,
+				"lng": 7.556973999999999
+			}
+		},
+		{
+			"name": "Bad Rappenau",
+			"coordinates": {
+				"lat": 49.24016899999999,
+				"lng": 9.1020153
+			}
+		},
+		{
+			"name": "Bad Krozingen",
+			"coordinates": {
+				"lat": 47.9160569,
+				"lng": 7.7003244
+			}
+		},
+		{
+			"name": "Basel Bad Bf",
+			"coordinates": {
+				"lat": 47.56738910000001,
+				"lng": 7.607130599999999
+			}
+		},
+		{
+			"name": "Kleinkems",
+			"coordinates": {
+				"lat": 47.688129,
+				"lng": 7.523394899999999
+			}
+		},
+		{
+			"name": "Echterdingen",
+			"coordinates": {
+				"lat": 48.6980072,
+				"lng": 9.140742699999999
+			}
+		},
+		{
+			"name": "Ditzingen",
+			"coordinates": {
+				"lat": 48.8264662,
+				"lng": 9.067556399999999
+			}
+		},
+		{
+			"name": "Böhl-Iggelheim",
+			"coordinates": {
+				"lat": 49.3656101,
+				"lng": 8.308653999999999
+			}
+		},
+		{
+			"name": "Höfingen",
+			"coordinates": {
+				"lat": 48.81679949999999,
+				"lng": 9.0176951
+			}
+		},
+		{
+			"name": "Engen",
+			"coordinates": {
+				"lat": 47.854144,
+				"lng": 8.7737404
+			}
+		},
+		{
+			"name": "Groß Gerau-Dornheim",
+			"coordinates": {
+				"lat": 49.8766366,
+				"lng": 8.485474800000002
+			}
+		},
+		{
+			"name": "Bruchmühlbach-Miesau",
+			"coordinates": {
+				"lat": 49.3839906,
+				"lng": 7.4471353
+			}
+		},
+		{
+			"name": "Beutelsbach",
+			"coordinates": {
+				"lat": 48.8016461,
+				"lng": 9.3883618
+			}
+		},
+		{
+			"name": "Biblis",
+			"coordinates": {
+				"lat": 49.6882507,
+				"lng": 8.453055899999999
+			}
+		},
+		{
+			"name": "Eberbach",
+			"coordinates": {
+				"lat": 42.2625004,
+				"lng": -83.51926449999999
+			}
+		},
+		{
+			"name": "Germersheim",
+			"coordinates": {
+				"lat": 49.2140244,
+				"lng": 8.3668146
+			}
+		},
+		{
+			"name": "Heitersheim",
+			"coordinates": {
+				"lat": 47.87331409999999,
+				"lng": 7.6575713
+			}
+		},
+		{
+			"name": "Heidelberg-Kirchheim/Rohrbach",
+			"coordinates": {
+				"lat": 49.37885850000001,
+				"lng": 8.6752621
+			}
+		},
+		{
+			"name": "Blankenloch",
+			"coordinates": {
+				"lat": 49.06861199999999,
+				"lng": 8.4738774
+			}
+		},
+		{
+			"name": "Gärtringen",
+			"coordinates": {
+				"lat": 48.641586,
+				"lng": 8.9029165
+			}
+		},
+		{
+			"name": "Heilbronn Hbf",
+			"coordinates": {
+				"lat": 49.1427831,
+				"lng": 9.2081125
+			}
+		},
+		{
+			"name": "Benningen(Neckar)",
+			"coordinates": {
+				"lat": 48.94329760000001,
+				"lng": 9.239925699999999
+			}
+		},
+		{
+			"name": "Appenweier",
+			"coordinates": {
+				"lat": 48.5476784,
+				"lng": 7.9744954
+			}
+		},
+		{
+			"name": "Groß Rohrheim",
+			"coordinates": {
+				"lat": 49.7157784,
+				"lng": 8.4725086
+			}
+		},
+		{
+			"name": "Herrenberg",
+			"coordinates": {
+				"lat": 48.5950369,
+				"lng": 8.8671577
+			}
+		},
+		{
+			"name": "Aldingen(b Spaichingen)",
+			"coordinates": {
+				"lat": 48.0956781,
+				"lng": 8.7127576
+			}
+		},
+		{
+			"name": "Grunbach",
+			"coordinates": {
+				"lat": 50.41942659999999,
+				"lng": 12.3825799
+			}
+		},
+		{
+			"name": "Herbolzheim(Breisg)",
+			"coordinates": {
+				"lat": 48.223866,
+				"lng": 7.767638000000001
+			}
+		},
+		{
+			"name": "Bad Schönborn Süd",
+			"coordinates": {
+				"lat": 49.1999448,
+				"lng": 8.6420359
+			}
+		},
+		{
+			"name": "Asperg",
+			"coordinates": {
+				"lat": 48.9041527,
+				"lng": 9.1400293
+			}
+		},
+		{
+			"name": "Bad Schönborn-Kronau",
+			"coordinates": {
+				"lat": 49.2196088,
+				"lng": 8.6470647
+			}
+		},
+		{
+			"name": "Basel SBB",
+			"coordinates": {
+				"lat": 47.54758899999999,
+				"lng": 7.589662
+			}
+		},
+		{
+			"name": "Haßloch(Pfalz)",
+			"coordinates": {
+				"lat": 49.3610149,
+				"lng": 8.2578059
+			}
+		},
+		{
+			"name": "Baden-Baden Rebland",
+			"coordinates": {
+				"lat": 48.7333921,
+				"lng": 8.1791129
+			}
+		},
+		{
+			"name": "Heidelberg Hbf",
+			"coordinates": {
+				"lat": 49.4042555,
+				"lng": 8.6758481
+			}
+		},
+		{
+			"name": "Hauptstuhl",
+			"coordinates": {
+				"lat": 49.4003076,
+				"lng": 7.489745800000001
+			}
+		},
+		{
+			"name": "Illingen(Württ)",
+			"coordinates": {
+				"lat": 48.9562888,
+				"lng": 8.9256999
+			}
+		},
+		{
+			"name": "Istein",
+			"coordinates": {
+				"lat": 40.7199006,
+				"lng": -73.8434439
+			}
+		},
+		{
+			"name": "Insheim",
+			"coordinates": {
+				"lat": 49.1572343,
+				"lng": 8.143958999999999
+			}
+		},
+		{
+			"name": "Hochspeyer",
+			"coordinates": {
+				"lat": 49.442778,
+				"lng": 7.896667
+			}
+		},
+		{
+			"name": "Hockenheim",
+			"coordinates": {
+				"lat": 49.3298956,
+				"lng": 8.5709249
+			}
+		},
+		{
+			"name": "Horb",
+			"coordinates": {
+				"lat": 48.442078,
+				"lng": 8.684851199999999
+			}
+		},
+		{
+			"name": "Homburg(Saar)Hbf",
+			"coordinates": {
+				"lat": 49.3277449,
+				"lng": 7.337479299999999
+			}
+		},
+		{
+			"name": "Kaiserslautern Hbf",
+			"coordinates": {
+				"lat": 49.4362157,
+				"lng": 7.7685169
+			}
+		},
+		{
+			"name": "Karlsruhe West",
+			"coordinates": {
+				"lat": 49.0068901,
+				"lng": 8.4036527
+			}
+		},
+		{
+			"name": "Karlsruhe-Durlach",
+			"coordinates": {
+				"lat": 48.997819,
+				"lng": 8.4771923
+			}
+		},
+		{
+			"name": "Hulb",
+			"coordinates": {
+				"lat": 48.6792677,
+				"lng": 8.9823237
+			}
+		},
+		{
+			"name": "Edenkoben",
+			"coordinates": {
+				"lat": 49.283333,
+				"lng": 8.133333
+			}
+		},
+		{
+			"name": "Eimeldingen",
+			"coordinates": {
+				"lat": 47.6306222,
+				"lng": 7.595158
+			}
+		},
+		{
+			"name": "Einsiedlerhof",
+			"coordinates": {
+				"lat": 49.4385181,
+				"lng": 7.6611104
+			}
+		},
+		{
+			"name": "Ehningen(b Böblingen)",
+			"coordinates": {
+				"lat": 48.6619979,
+				"lng": 8.9433788
+			}
+		},
+		{
+			"name": "Efringen-Kirchen",
+			"coordinates": {
+				"lat": 47.6561741,
+				"lng": 7.562046499999999
+			}
+		},
+		{
+			"name": "Enzberg",
+			"coordinates": {
+				"lat": 48.9347156,
+				"lng": 8.7988635
+			}
+		},
+		{
+			"name": "Ellental",
+			"coordinates": {
+				"lat": 48.95530280000001,
+				"lng": 9.1235834
+			}
+		},
+		{
+			"name": "Endersbach",
+			"coordinates": {
+				"lat": 48.8109669,
+				"lng": 9.3659947
+			}
+		},
+		{
+			"name": "Emmendingen",
+			"coordinates": {
+				"lat": 48.1170918,
+				"lng": 7.853904699999998
+			}
+		},
+		{
+			"name": "Frankfurt am Main - Stadion",
+			"coordinates": {
+				"lat": 50.06796199999999,
+				"lng": 8.633496
+			}
+		},
+		{
+			"name": "Mannheim-Waldhof",
+			"coordinates": {
+				"lat": 49.5206848,
+				"lng": 8.4837651
+			}
+		},
+		{
+			"name": "Mannheim-Neckarstadt",
+			"coordinates": {
+				"lat": 49.5022134,
+				"lng": 8.4651956
+			}
+		},
+		{
+			"name": "Mannheim Hbf",
+			"coordinates": {
+				"lat": 49.4796668,
+				"lng": 8.4698038
+			}
+		},
+		{
+			"name": "Mannheim-Friedrichsfeld",
+			"coordinates": {
+				"lat": 49.4404951,
+				"lng": 8.5758288
+			}
+		},
+		{
+			"name": "Karlsruhe-Knielingen",
+			"coordinates": {
+				"lat": 49.0388727,
+				"lng": 8.336478999999999
+			}
+		},
+		{
+			"name": "Fellbach",
+			"coordinates": {
+				"lat": 48.8215653,
+				"lng": 9.2702944
+			}
+		},
+		{
+			"name": "Filderstadt",
+			"coordinates": {
+				"lat": 48.67819739999999,
+				"lng": 9.2161353
+			}
+		},
+		{
+			"name": "Eutingen(Baden)",
+			"coordinates": {
+				"lat": 48.4778509,
+				"lng": 8.748092399999999
+			}
+		},
+		{
+			"name": "Eutingen im Gäu",
+			"coordinates": {
+				"lat": 48.4778509,
+				"lng": 8.748092399999999
+			}
+		},
+		{
+			"name": "Ettlingen West",
+			"coordinates": {
+				"lat": 48.9505026,
+				"lng": 8.381868899999999
+			}
+		},
+		{
+			"name": "Ergenzingen",
+			"coordinates": {
+				"lat": 48.4962758,
+				"lng": 8.8108089
+			}
+		},
+		{
+			"name": "Esslingen-Zell",
+			"coordinates": {
+				"lat": 48.7264734,
+				"lng": 9.3602951
+			}
+		},
+		{
+			"name": "Esslingen(Neckar)",
+			"coordinates": {
+				"lat": 48.7433425,
+				"lng": 9.320112199999999
+			}
+		},
+		{
+			"name": "Esslingen-Mettingen",
+			"coordinates": {
+				"lat": 48.7484393,
+				"lng": 9.2763838
+			}
+		},
+		{
+			"name": "Karlsruhe Hbf",
+			"coordinates": {
+				"lat": 48.9939401,
+				"lng": 8.4009743
+			}
+		},
+		{
+			"name": "Favoritepark",
+			"coordinates": {
+				"lat": 48.9090479,
+				"lng": 9.1886957
+			}
+		},
+		{
+			"name": "Mühlacker Rößlesweg",
+			"coordinates": {
+				"lat": 48.9564078,
+				"lng": 8.8589948
+			}
+		},
+		{
+			"name": "Müllheim(Baden)",
+			"coordinates": {
+				"lat": 47.8098575,
+				"lng": 7.5996729
+			}
+		},
+		{
+			"name": "Neustadt-Böbig",
+			"coordinates": {
+				"lat": 49.3535432,
+				"lng": 8.1573876
+			}
+		},
+		{
+			"name": "Neckarsulm",
+			"coordinates": {
+				"lat": 49.1922581,
+				"lng": 9.228708899999999
+			}
+		},
+		{
+			"name": "Nellmersbach",
+			"coordinates": {
+				"lat": 48.9017546,
+				"lng": 9.416255
+			}
+		},
+		{
+			"name": "Neustadt(Weinstr)Hbf",
+			"coordinates": {
+				"lat": 49.3498969,
+				"lng": 8.1403561
+			}
+		},
+		{
+			"name": "Neustadt(Weinstr) Süd",
+			"coordinates": {
+				"lat": 49.3416161,
+				"lng": 8.1571719
+			}
+		},
+		{
+			"name": "Offenburg",
+			"coordinates": {
+				"lat": 48.473451,
+				"lng": 7.9498017
+			}
+		},
+		{
+			"name": "Niefern",
+			"coordinates": {
+				"lat": 48.9095567,
+				"lng": 8.7983171
+			}
+		},
+		{
+			"name": "Nierstein",
+			"coordinates": {
+				"lat": 49.869463,
+				"lng": 8.3371906
+			}
+		},
+		{
+			"name": "Neulußheim",
+			"coordinates": {
+				"lat": 49.2918859,
+				"lng": 8.5216709
+			}
+		},
+		{
+			"name": "Neuwirtshaus(Porscheplatz)",
+			"coordinates": {
+				"lat": 48.8337573,
+				"lng": 9.1521138
+			}
+		},
+		{
+			"name": "Nufringen",
+			"coordinates": {
+				"lat": 48.623414,
+				"lng": 8.8897002
+			}
+		},
+		{
+			"name": "Kandel",
+			"coordinates": {
+				"lat": 26.2727493,
+				"lng": -81.7983642
+			}
+		},
+		{
+			"name": "Pforzheim Hbf",
+			"coordinates": {
+				"lat": 48.893722,
+				"lng": 8.7030321
+			}
+		},
+		{
+			"name": "Norsingen",
+			"coordinates": {
+				"lat": 47.93811470000001,
+				"lng": 7.728632299999999
+			}
+		},
+		{
+			"name": "Neustadt-Hohenacker",
+			"coordinates": {
+				"lat": 48.85919939999999,
+				"lng": 9.324906499999999
+			}
+		},
+		{
+			"name": "Oberesslingen",
+			"coordinates": {
+				"lat": 48.7296066,
+				"lng": 9.331345299999999
+			}
+		},
+		{
+			"name": "Oberndorf(Neckar)",
+			"coordinates": {
+				"lat": 48.2946154,
+				"lng": 8.5765805
+			}
+		},
+		{
+			"name": "Oberaichen",
+			"coordinates": {
+				"lat": 48.7055053,
+				"lng": 9.127151
+			}
+		},
+		{
+			"name": "Haltingen",
+			"coordinates": {
+				"lat": 47.6138991,
+				"lng": 7.6116907
+			}
+		},
+		{
+			"name": "Schwaikheim",
+			"coordinates": {
+				"lat": 48.8732234,
+				"lng": 9.3526778
+			}
+		},
+		{
+			"name": "Schorndorf",
+			"coordinates": {
+				"lat": 48.8015423,
+				"lng": 9.52962
+			}
+		},
+		{
+			"name": "Gäufelden",
+			"coordinates": {
+				"lat": 48.5536742,
+				"lng": 8.8299208
+			}
+		},
+		{
+			"name": "Guntersblum",
+			"coordinates": {
+				"lat": 49.797222,
+				"lng": 8.345556
+			}
+		},
+		{
+			"name": "Schwetzingen",
+			"coordinates": {
+				"lat": 49.3852193,
+				"lng": 8.572244399999999
+			}
+		},
+		{
+			"name": "Groß Gerau-Dornberg",
+			"coordinates": {
+				"lat": 49.9119265,
+				"lng": 8.4951867
+			}
+		},
+		{
+			"name": "Scheidt(Saar)",
+			"coordinates": {
+				"lat": 49.244018,
+				"lng": 7.057083
+			}
+		},
+		{
+			"name": "Geradstetten",
+			"coordinates": {
+				"lat": 48.8097646,
+				"lng": 9.443185399999999
+			}
+		},
+		{
+			"name": "Ebringen",
+			"coordinates": {
+				"lat": 47.9561612,
+				"lng": 7.776980200000001
+			}
+		},
+		{
+			"name": "Rutesheim",
+			"coordinates": {
+				"lat": 48.80815,
+				"lng": 8.9455036
+			}
+		},
+		{
+			"name": "Knöringen-Essingen",
+			"coordinates": {
+				"lat": 49.2358719,
+				"lng": 8.1436511
+			}
+		},
+		{
+			"name": "Wörth(Rhein)",
+			"coordinates": {
+				"lat": 49.0514423,
+				"lng": 8.257337999999999
+			}
+		},
+		{
+			"name": "Winterbach(b Schorndorf)",
+			"coordinates": {
+				"lat": 48.7984929,
+				"lng": 9.4814023
+			}
+		},
+		{
+			"name": "Kollmarsreute",
+			"coordinates": {
+				"lat": 48.1018973,
+				"lng": 7.880602
+			}
+		},
+		{
+			"name": "Kornwestheim Pbf",
+			"coordinates": {
+				"lat": 48.8622275,
+				"lng": 9.179487199999999
+			}
+		},
+		{
+			"name": "Wörth(Rhein) Mozartstraße",
+			"coordinates": {
+				"lat": 49.0541111,
+				"lng": 8.2506667
+			}
+		},
+		{
+			"name": "Köndringen",
+			"coordinates": {
+				"lat": 48.1400951,
+				"lng": 7.8060243
+			}
+		},
+		{
+			"name": "Zeppelinheim",
+			"coordinates": {
+				"lat": 50.0350671,
+				"lng": 8.612769799999999
+			}
+		},
+		{
+			"name": "Stuttgart Stadtmitte",
+			"coordinates": {
+				"lat": 48.7751178,
+				"lng": 9.1716994
+			}
+		},
+		{
+			"name": "Ludwigshafen(Rh)Hbf",
+			"coordinates": {
+				"lat": 49.4778688,
+				"lng": 8.4345979
+			}
+		},
+		{
+			"name": "Maichingen",
+			"coordinates": {
+				"lat": 48.722079,
+				"lng": 8.965710999999999
+			}
+		},
+		{
+			"name": "Mainz Römisches Theater",
+			"coordinates": {
+				"lat": 49.9935677,
+				"lng": 8.2778033
+			}
+		},
+		{
+			"name": "Mainz-Laubenheim",
+			"coordinates": {
+				"lat": 49.960694,
+				"lng": 8.3132048
+			}
+		},
+		{
+			"name": "Ludwigshafen-Rheingönheim",
+			"coordinates": {
+				"lat": 49.4467282,
+				"lng": 8.4205613
+			}
+		},
+		{
+			"name": "Magstadt",
+			"coordinates": {
+				"lat": 48.7425459,
+				"lng": 8.966557500000002
+			}
+		},
+		{
+			"name": "Maichingen Nord",
+			"coordinates": {
+				"lat": 48.7271824,
+				"lng": 8.979362499999999
+			}
+		},
+		{
+			"name": "Maikammer-Kirrweiler",
+			"coordinates": {
+				"lat": 49.3054049,
+				"lng": 8.1301345
+			}
+		},
+		{
+			"name": "Mainz Hbf",
+			"coordinates": {
+				"lat": 50.001481,
+				"lng": 8.2590637
+			}
+		},
+		{
+			"name": "Malsch",
+			"coordinates": {
+				"lat": 48.8844965,
+				"lng": 8.3252253
+			}
+		},
+		{
+			"name": "Schliengen",
+			"coordinates": {
+				"lat": 47.7558933,
+				"lng": 7.5771823
+			}
+		},
+		{
+			"name": "Malmsheim",
+			"coordinates": {
+				"lat": 48.77482089999999,
+				"lng": 8.903683
+			}
+		},
+		{
+			"name": "Sachsenheim",
+			"coordinates": {
+				"lat": 48.9603579,
+				"lng": 9.064320799999999
+			}
+		},
+		{
+			"name": "Mannheim Handelshafen",
+			"coordinates": {
+				"lat": 49.4918837,
+				"lng": 8.453858799999999
+			}
+		},
+		{
+			"name": "Schafbrücke",
+			"coordinates": {
+				"lat": 49.2273948,
+				"lng": 7.0575285
+			}
+		},
+		{
+			"name": "Rot-Malsch",
+			"coordinates": {
+				"lat": 49.2433919,
+				"lng": 8.6519855
+			}
+		},
+		{
+			"name": "Stuttgart-Obertürkheim",
+			"coordinates": {
+				"lat": 48.76529009999999,
+				"lng": 9.2681633
+			}
+		},
+		{
+			"name": "Stuttgart-Untertürkheim",
+			"coordinates": {
+				"lat": 48.7856737,
+				"lng": 9.256158700000002
+			}
+		},
+		{
+			"name": "Stuttgart-Feuerbach",
+			"coordinates": {
+				"lat": 48.81160089999999,
+				"lng": 9.1589461
+			}
+		},
+		{
+			"name": "Stuttgart-Sommerrain",
+			"coordinates": {
+				"lat": 48.8181818,
+				"lng": 9.245925699999999
+			}
+		},
+		{
+			"name": "Sulz(Neckar)",
+			"coordinates": {
+				"lat": 48.3537106,
+				"lng": 8.6344165
+			}
+		},
+		{
+			"name": "Stuttgart Schwabstr.",
+			"coordinates": {
+				"lat": 48.7705648,
+				"lng": 9.1580529
+			}
+		},
+		{
+			"name": "Stuttgart-Bad Cannstatt",
+			"coordinates": {
+				"lat": 48.8084576,
+				"lng": 9.225035499999999
+			}
+		},
+		{
+			"name": "Tamm(Württ)",
+			"coordinates": {
+				"lat": 48.921493,
+				"lng": 9.125622900000002
+			}
+		},
+		{
+			"name": "Tuttlingen",
+			"coordinates": {
+				"lat": 47.98233159999999,
+				"lng": 8.819209599999999
+			}
+		},
+		{
+			"name": "Stuttgart-Zuffenhausen",
+			"coordinates": {
+				"lat": 48.8315855,
+				"lng": 9.1745921
+			}
+		},
+		{
+			"name": "Stuttgart-Vaihingen",
+			"coordinates": {
+				"lat": 48.7303646,
+				"lng": 9.107941799999999
+			}
+		},
+		{
+			"name": "Stuttgart-Rohr",
+			"coordinates": {
+				"lat": 48.7177636,
+				"lng": 9.108365899999999
+			}
+		},
+		{
+			"name": "Teningen-Mundingen",
+			"coordinates": {
+				"lat": 48.1351284,
+				"lng": 7.8330412
+			}
+		},
+		{
+			"name": "Vogelweh",
+			"coordinates": {
+				"lat": 49.43496510000001,
+				"lng": 7.704711499999999
+			}
+		},
+		{
+			"name": "Weil der Stadt",
+			"coordinates": {
+				"lat": 48.7535937,
+				"lng": 8.8727422
+			}
+		},
+		{
+			"name": "Walldorf(Hess)",
+			"coordinates": {
+				"lat": 50.00322329999999,
+				"lng": 8.5716643
+			}
+		},
+		{
+			"name": "Wendlingen(Neckar)",
+			"coordinates": {
+				"lat": 48.671757,
+				"lng": 9.3827676
+			}
+		},
+		{
+			"name": "Winden(Pfalz)",
+			"coordinates": {
+				"lat": 49.0984007,
+				"lng": 8.1185103
+			}
+		},
+		{
+			"name": "Weingarten(Baden)",
+			"coordinates": {
+				"lat": 49.0472729,
+				"lng": 8.5273525
+			}
+		},
+		{
+			"name": "Wernau(Neckar)",
+			"coordinates": {
+				"lat": 48.6914602,
+				"lng": 9.417933999999999
+			}
+		},
+		{
+			"name": "Weilimdorf",
+			"coordinates": {
+				"lat": 48.81418,
+				"lng": 9.1121079
+			}
+		},
+		{
+			"name": "Worms Hbf",
+			"coordinates": {
+				"lat": 49.6347525,
+				"lng": 8.3568461
+			}
+		},
+		{
+			"name": "Wiesloch-Walldorf",
+			"coordinates": {
+				"lat": 49.2913077,
+				"lng": 8.66442
+			}
+		},
+		{
+			"name": "Weiler(Rems)",
+			"coordinates": {
+				"lat": 48.8002273,
+				"lng": 9.5012455
+			}
+		},
+		{
+			"name": "Wilferdingen-Singen",
+			"coordinates": {
+				"lat": 48.9535916,
+				"lng": 8.572274
+			}
+		},
+		{
+			"name": "Plochingen",
+			"coordinates": {
+				"lat": 48.7131896,
+				"lng": 9.4197264
+			}
+		},
+		{
+			"name": "Wiesental",
+			"coordinates": {
+				"lat": 47.7095219,
+				"lng": 7.8572617
+			}
+		}
+	],
+	"routes": [
+		"https://www.zugfinder.de/kbs.php?kbs=770",
+		"https://www.zugfinder.de/kbs.php?kbs=740",
+		"https://www.zugfinder.de/kbs.php?kbs=790.6b",
+		"https://www.zugfinder.de/kbs.php?kbs=790.6a",
+		"https://www.zugfinder.de/kbs.php?kbs=790.5",
+		"https://www.zugfinder.de/kbs.php?kbs=790.4",
+		"https://www.zugfinder.de/kbs.php?kbs=790.3",
+		"https://www.zugfinder.de/kbs.php?kbs=790.2",
+		"https://www.zugfinder.de/kbs.php?kbs=790.1",
+		"https://www.zugfinder.de/kbs.php?kbs=676",
+		"https://www.zugfinder.de/kbs.php?kbs=700",
+		"https://www.zugfinder.de/kbs.php?kbs=659",
+		"https://www.zugfinder.de/kbs.php?kbs=700",
+		"https://www.zugfinder.de/kbs.php?kbs=701",
+		"https://www.zugfinder.de/kbs.php?kbs=702",
+		"https://www.zugfinder.de/kbs.php?kbs=655",
+		"https://www.zugfinder.de/kbs.php?kbs=660",
+		"https://www.zugfinder.de/kbs.php?kbs=670",
+		"https://www.zugfinder.de/kbs.php?kbs=705a",
+		"https://www.zugfinder.de/kbs.php?kbs=705b",
+		"https://www.zugfinder.de/kbs.php?kbs=771"
+	]
 }

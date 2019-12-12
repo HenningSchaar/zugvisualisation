@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "dom-parser": "^0.1.6",
+    "remove-accents": "^0.4.2",
     "request": "^2.88.0",
     "request-promise": "^4.2.5"
   },

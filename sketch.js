@@ -5,10 +5,11 @@ const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];
 const trainColour3 = [0, 255, 0];
 const trainColour4 = [0, 255, 0];
-const size = 1440;
+const sizeY = 1200;
+const sizeX = sizeY * (288 / 180)
 
 function setup() {
-    createCanvas(size * (16 / 9), size);
+    createCanvas(sizeX, sizeY);
     background(backgroundColor);
     frameRate(1);
     textSize(32);
@@ -24,7 +25,7 @@ function draw() {
 
 function getData() {
     let url =
-        'https://www.zugfinder.de/js/json_kbs.php?kbs=700';
+        'https://www.zugfinder.de/js/json.php?netz=deutschland|439|53|1278|615';
     httpGet(url, 'json', false, function(response) {
         if (trains != response) {
             trains = response.array; //convert train data to an array of trains
