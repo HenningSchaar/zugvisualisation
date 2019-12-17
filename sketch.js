@@ -33,11 +33,7 @@ function setup() {
     trainCanvas.clear(); //.background(50, 50, 0, 50);
     trainCanvas.noStroke();
     drawMap(stationList); //draw the background with all available Stations
-    map.routes.forEach(url => {
-        console.log(jsonUrl(url))
-    })
-
-    getData(jsonUrl(map.routes[0]));
+    getData();
 
 }
 
@@ -52,20 +48,20 @@ function draw() {
 }
 
 function getData(url) {
-    httpGet('https://www.zugfinder.de/js/json_kbs.php?kbs=771', "json", false, function(response) {
-        console.log(response);
+    httpGet('https://www.zugfinder.de/js/json_kbs.php?kbs=650', false, function(response) {
         /*
-        if (trains != response) {
-            trains = response.array; //convert train data to an array of trains
-            trains.shift(); //remove first entry which for some reason is always empty
-            strecken.strecken.forEach(strecke => {
-                strecke.zuege = [];
-                trains.forEach(train => {
-                    strecke.zuege.push(train);
+            console.log(response);
+            if (trains != response) {
+                trains = response.array; //convert train data to an array of trains
+                trains.shift(); //remove first entry which for some reason is always empty
+                strecken.strecken.forEach(strecke => {
+                    strecke.zuege = [];
+                    trains.forEach(train => {
+                        strecke.zuege.push(train);
+                    })
                 })
-            })
-        } //else { console.log('No new data.') };
-        */
+            } //else { console.log('No new data.') };
+            */
     })
 }
 
@@ -164,4 +160,3 @@ function stop() {
 function handleError(error) {
     console.log(error);
 };
-h
