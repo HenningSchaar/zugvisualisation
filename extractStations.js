@@ -29,7 +29,8 @@ checkCoordinates();
 function checkCoordinates() {
     if (stationsWithCoordinates.length == stations.length) {
         map.stations = stationsWithCoordinates;
-        fs.writeFileSync('map.json', JSON.stringify(map, null, "\t"));
+        console.log(map);
+        //fs.writeFileSync('map.json', JSON.stringify(map, null, "\t"));
     } else {
         setTimeout(checkCoordinates, 1000);
     }

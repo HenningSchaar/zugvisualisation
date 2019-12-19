@@ -33,7 +33,7 @@ function getStreckenTable(url) {
             strecke = dom.getElementById('strecke');
             stationList = extractTowns(strecke);
             positionList = extractPositions(strecke);
-            streckeTable = marryData(testUrl, stationList, positionList);
+            streckeTable = marryData(url, stationList, positionList);
             strecken.strecken.push(streckeTable);
         });
 }
