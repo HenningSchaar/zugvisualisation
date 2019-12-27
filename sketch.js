@@ -23,11 +23,14 @@ function preload() {
 
 
 function setup() {
+    /*
+    //Shorten Streckenarray for testing
+    strecken.strecken = strecken.strecken.slice(0, 1);
+    */
+
     // Create an array of Stations in the map.json file
     stationList = map.stations;
 
-    // Calculate Canvas position based on coordinates
-    addPixelData(stationList);
 
     //Initialize Graphics
     createCanvas(sizeX, sizeY);
@@ -39,6 +42,9 @@ function setup() {
     trainCanvas.clear(); //.background(50, 50, 0, 50);
     trainCanvas.noStroke();
 
+    // Calculate Canvas position based on coordinates
+    addPixelData(stationList);
+
     // Draw map of all available Stations
     drawMap(stationList);
 
@@ -48,9 +54,13 @@ function setup() {
 
 
 function draw() {
-    drawMap(stationList);
+    //drawMap(stationList);
     strecken.strecken.forEach(strecke => {
         if (strecke.zuege) {
+            strecke.zuege.forEach(zug => {
+                progressInfo = calculateProgress(zug, strecke);
+                zug.progressInfo = progressInfo
+            })
             drawTrains(strecke.zuege);
         }
     })

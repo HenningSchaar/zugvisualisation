@@ -7,7 +7,6 @@ class Station {
         this.y = height - ((stationEntry.coordinates.lat - latOffset) * (height / coordRange));
         this.diameter = 10;
         this.color = 100; //[random(50, 255), random(50, 255), random(50, 255)];
-        this.speed = 0;
     }
 
     display(arg) {
