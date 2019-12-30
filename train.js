@@ -2,6 +2,7 @@ class Train {
     constructor(trainDataEntry) {
         this.x = trainDataEntry.xpos * (trainCanvas.height / 1000) + (trainCanvas.width / 2 - trainCanvas.height / 2);
         this.y = trainDataEntry.ypos * (trainCanvas.height / 1000);
+
         this.diameter = 10;
         this.color = extractColour(trainDataEntry.farbe);
         this.speed = 0;
@@ -105,4 +106,31 @@ function calculateInBetweenPoint(trainDataEntry) {
     v2 = v2.mult(trainDataEntry.progressInfo.progress);
     v2 = v2.add(v0);
     return [v2.x, v2.y]
+}
+
+function writePrevPosition() {
+    timeCounter = 0;
+    if (streckenOld) {
+        if (JSON.stringify(streckenOld) != JSON.stringify(strecken)) {
+            strecken.strecken.forEach(strecke => {
+                if (strecke.zuege) {
+                    strecke.zuege.forEach(zug => {
+
+                        streckenOld.strecken.forEach(streckeOld => {
+                            if (streckeOld.zuege) {
+                                streckeOld.zuege.forEach(zugOld => {
+                                    if (zugOld.zugnr == zug.zugnr) {
+                                        zug.xOld = zugOld.xpos;
+                                        zug.yOld = zugOld.ypos;
+                                    }
+                                })
+                            }
+                        })
+
+                    })
+                }
+            })
+        }
+        streckenOld = JSON.parse(JSON.stringify(strecken));
+    } else console.log('data is the same');
 }

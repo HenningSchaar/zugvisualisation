@@ -1,9 +1,15 @@
-let trains;
 let stationList;
 let map;
 let trainCanvas;
+let streckenOld;
+let strecken;
 
-// Config variables/Display options
+// General config
+
+const dataTimeout = 30000
+
+// Config Display options
+const FPS = 20;
 const backgroundColor = 50;
 const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];
@@ -23,20 +29,21 @@ function preload() {
 
 
 function setup() {
-    /*
-    //Shorten Streckenarray for testing
-    strecken.strecken = strecken.strecken.slice(0, 1);
-    */
+
+    /* //Shorten Streckenarray for testing
+    strecken.strecken = strecken.strecken.slice(0, 1); */
+
+    // Write initial strecken to streckenOld for later modification
+    streckenOld = JSON.parse(JSON.stringify(strecken));
 
     // Create an array of Stations in the map.json file
     stationList = map.stations;
-
 
     //Initialize Graphics
     createCanvas(sizeX, sizeY);
     trainCanvas = createGraphics(sizeX, sizeY, P2D);
     background(backgroundColor);
-    frameRate(1);
+    frameRate(FPS);
     textSize(10);
     noStroke();
     trainCanvas.clear(); //.background(50, 50, 0, 50);
@@ -50,11 +57,13 @@ function setup() {
 
     // Get Zugfinder data on each strecke
     collectData();
+
+    //noLoop();
 }
 
 
 function draw() {
-    //drawMap(stationList);
+    drawMap(stationList);
     strecken.strecken.forEach(strecke => {
         if (strecke.zuege) {
             strecke.zuege.forEach(zug => {
@@ -67,25 +76,26 @@ function draw() {
 }
 
 function collectData() {
+    writePrevPosition();
     strecken.strecken.forEach(strecke => {
         strecke = getData(strecke);
     });
-    setTimeout(collectData, 60000);
+    setTimeout(collectData, dataTimeout);
 }
 
 function getData(strecke) {
     url = jsonUrl(strecke.url)
     httpGet(url, false, function(response) {
         console.log(response);
-        if (trains != response) {
-            trains = response.array; //convert train data to an array of trains
-            trains.shift(); //remove first entry which for some reason is always empty
-            strecke.zuege = [];
-            trains.forEach(train => {
-                strecke.zuege.push(train);
-            })
-            return strecke;
-        } else { console.log('No new data.') };
+
+        trains = response.array; //convert train data to an array of trains
+        trains.shift(); //remove first entry which for some reason is always empty
+        strecke.zuege = [];
+        trains.forEach(train => {
+            strecke.zuege.push(train);
+        })
+        return strecke;
+
     })
 }
 
@@ -101,4 +111,4 @@ function stop() {
 
 function handleError(error) {
     console.log(error);
-};
+}
