@@ -2,6 +2,9 @@ class Train {
     constructor(trainDataEntry) {
         this.x = trainDataEntry.xpos * (trainCanvas.height / 1000) + (trainCanvas.width / 2 - trainCanvas.height / 2);
         this.y = trainDataEntry.ypos * (trainCanvas.height / 1000);
+        if (trainDataEntry.yOld) {
+            this.yOld = trainDataEntry.yOld
+        }
 
         this.diameter = 10;
         this.color = extractColour(trainDataEntry.farbe);
@@ -48,10 +51,17 @@ function drawTrains(trainList) {
 }
 
 function calculateProgress(zug, strecke) {
+    if (zug.yOld) {
+        ypos = zug.yOld;
+        zug.yOld = lerp(zug.yOld, zug.ypos, 0.005);
+    } else {
+        ypos = zug.ypos;
+        zug.yOld = zug.ypos;
+    }
     stationPair = getTwoNearestStations(zug, strecke);
-    if (stationPair) {
+    if (strecke.stations[stationPair[1]]) {
         stationPairPositions = [strecke.stations[stationPair[0]].position, strecke.stations[stationPair[1]].position];
-        progress = (zug.ypos - stationPairPositions[0]) / (stationPairPositions[1] - stationPairPositions[0]);
+        progress = (ypos - stationPairPositions[0]) / (stationPairPositions[1] - stationPairPositions[0]);
         stationName0 = strecke.stations[stationPair[0]].station;
         stationName1 = strecke.stations[stationPair[1]].station;
         stationPosition0 = getPositionOnMap(stationName0);
@@ -71,7 +81,7 @@ function calculateProgress(zug, strecke) {
 }
 
 function getTwoNearestStations(zug, strecke) {
-    let twoNearestStations = [0, 1];
+    let twoNearestStations = [];
     strecke.stations.forEach((station, i) => {
         if (zug.ypos >= station.position) {
             if (strecke.stations[i + 1]) {
@@ -106,31 +116,4 @@ function calculateInBetweenPoint(trainDataEntry) {
     v2 = v2.mult(trainDataEntry.progressInfo.progress);
     v2 = v2.add(v0);
     return [v2.x, v2.y]
-}
-
-function writePrevPosition() {
-    timeCounter = 0;
-    if (streckenOld) {
-        if (JSON.stringify(streckenOld) != JSON.stringify(strecken)) {
-            strecken.strecken.forEach(strecke => {
-                if (strecke.zuege) {
-                    strecke.zuege.forEach(zug => {
-
-                        streckenOld.strecken.forEach(streckeOld => {
-                            if (streckeOld.zuege) {
-                                streckeOld.zuege.forEach(zugOld => {
-                                    if (zugOld.zugnr == zug.zugnr) {
-                                        zug.xOld = zugOld.xpos;
-                                        zug.yOld = zugOld.ypos;
-                                    }
-                                })
-                            }
-                        })
-
-                    })
-                }
-            })
-        }
-        streckenOld = JSON.parse(JSON.stringify(strecken));
-    } else console.log('data is the same');
 }

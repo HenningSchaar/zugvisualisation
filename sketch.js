@@ -15,8 +15,8 @@ const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];
 const trainColour3 = [0, 255, 0];
 const trainColour4 = [0, 255, 0];
-const sizeY = 1200;
-const sizeX = sizeY * (16 / 10)
+const sizeY = 1440;
+const sizeX = sizeY * (16 / 9)
 const latOffset = 47.5;
 const lngOffset = 6.7;
 const coordRange = 2.7;
@@ -76,7 +76,6 @@ function draw() {
 }
 
 function collectData() {
-    writePrevPosition();
     strecken.strecken.forEach(strecke => {
         strecke = getData(strecke);
     });
@@ -90,9 +89,25 @@ function getData(strecke) {
 
         trains = response.array; //convert train data to an array of trains
         trains.shift(); //remove first entry which for some reason is always empty
+        if (strecke.zuege) {
+            oldZuege = strecke.zuege;
+        } else { oldZuege = null }
         strecke.zuege = [];
         trains.forEach(train => {
-            strecke.zuege.push(train);
+            //strecke.zuege.push(train);
+            if (oldZuege) {
+                oldZuege.forEach(oldZug => {
+                    if (oldZug.zugnr == train.zugnr) {
+                        train.yOld = oldZug.yOld;
+                        strecke.zuege.push(train);
+                        updatedOldTrain = 'true';
+                    }
+                })
+                if (updatedOldTrain != 'true') {
+                    strecke.zuege.push(train);
+                }
+            } else { strecke.zuege.push(train); }
+
         })
         return strecke;
 
