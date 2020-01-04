@@ -13,6 +13,12 @@ class Train {
             let xy = calculateInBetweenPoint(trainDataEntry)
             this.xPosOnMap = xy[0]
             this.yPosOnMap = xy[1]
+            if ((this.xPosOnMap - 10) <= mouseX && mouseX <= (this.xPosOnMap + 10) && (this.yPosOnMap - 10) <= mouseY && mouseY <= (this.yPosOnMap + 10)) {
+                console.log(trainDataEntry);
+                fill(255);
+                ellipse(trainDataEntry.progressInfo.stations[0].position[0], trainDataEntry.progressInfo.stations[0].position[1], this.diameter, this.diameter);
+                ellipse(trainDataEntry.progressInfo.stations[1].position[0], trainDataEntry.progressInfo.stations[1].position[1], this.diameter, this.diameter);
+            }
         }
     }
 
@@ -59,45 +65,56 @@ function calculateProgress(zug, strecke) {
         zug.yOld = zug.ypos;
     }
     stationPair = getTwoNearestStations(zug, strecke);
-    if (strecke.stations[stationPair[1]]) {
-        stationPairPositions = [strecke.stations[stationPair[0]].position, strecke.stations[stationPair[1]].position];
-        progress = (ypos - stationPairPositions[0]) / (stationPairPositions[1] - stationPairPositions[0]);
-        stationName0 = strecke.stations[stationPair[0]].station;
-        stationName1 = strecke.stations[stationPair[1]].station;
-        stationPosition0 = getPositionOnMap(stationName0);
-        stationPosition1 = getPositionOnMap(stationName1);
-        progressInfo = {
-            "stations": [{
-                "name": stationName0,
-                "position": stationPosition0
-            }, {
-                "name": stationName1,
-                "position": stationPosition1
-            }],
-            "progress": progress
-        };
+    if (stationPair) {
+        if (strecke.stations[stationPair[0]]) {
+            if (strecke.stations[stationPair[1]]) {
+                stationPairPositions = [strecke.stations[stationPair[0]].position, strecke.stations[stationPair[1]].position];
+                progress = (ypos - stationPairPositions[0]) / (stationPairPositions[1] - stationPairPositions[0]);
+                stationName0 = strecke.stations[stationPair[0]].station;
+                stationName1 = strecke.stations[stationPair[1]].station;
+                stationPosition0 = getPositionOnMap(stationName0);
+                stationPosition1 = getPositionOnMap(stationName1);
+                progressInfo = {
+                    "stations": [{
+                        "name": stationName0,
+                        "position": stationPosition0
+                    }, {
+                        "name": stationName1,
+                        "position": stationPosition1
+                    }],
+                    "progress": progress
+                };
+            }
+            //console.log(progressInfo);
+        } else { handleError("Couldn\'t get position for one of the stations" + strecke.stations + " " + stationPair) }
         return progressInfo;
     }
 }
 
 function getTwoNearestStations(zug, strecke) {
     let twoNearestStations = [];
+    let errorInfo
     strecke.stations.forEach((station, i) => {
-        if (zug.ypos >= station.position) {
+        if (zug.yOld) {
+            ypos = zug.yOld
+        } else { ypos = zug.ypos }
+        if (ypos >= station.position) {
             if (strecke.stations[i + 1]) {
                 if (strecke.stations[i + 1].position >= zug.ypos) {
                     twoNearestStations = [i, i + 1];
                 }
-            } else { twoNearestStations = [i, null] }
+            } //else { errorInfo = "Train is behind last station " }
         }
     })
-    if (twoNearestStations) {
+    if (twoNearestStations.length == 2) {
         return twoNearestStations;
-    } else {
-        errorString = 'Couldn\'t get two nearest stations of '
-        zug.zugnr + ' in ' + strecke.url
-        handleError(errorString);
     }
+    /* else {
+           errorString = 'Couldn\'t get two nearest stations of ' + zug.zugnr + ' in ' + strecke.url + ': ' + errorInfo
+           handleError(errorString);
+           console.log(zug)
+           return;
+       } */
 }
 
 function getPositionOnMap(stationName) {
@@ -106,6 +123,10 @@ function getPositionOnMap(stationName) {
             xyPositionOnMap = [station.coordinates.x, station.coordinates.y];
         }
     })
+    if (xyPositionOnMap == null) {
+        handleError("couldn\'t find a station with the name " + stationName);
+        return;
+    }
     return xyPositionOnMap;
 }
 

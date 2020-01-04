@@ -77,7 +77,7 @@ function draw() {
 
 function collectData() {
     strecken.strecken.forEach(strecke => {
-        strecke = getData(strecke);
+        getData(strecke);
     });
     setTimeout(collectData, dataTimeout);
 }
@@ -93,24 +93,52 @@ function getData(strecke) {
             oldZuege = strecke.zuege;
         } else { oldZuege = null }
         strecke.zuege = [];
+
+        //Write old y-position to newly fetched data Entry for smooth displaying.
         trains.forEach(train => {
-            //strecke.zuege.push(train);
             if (oldZuege) {
+
                 oldZuege.forEach(oldZug => {
-                    if (oldZug.zugnr == train.zugnr) {
+                    if (oldZug.zugnr + oldZug.beginn == train.zugnr + train.beginn) {
                         train.yOld = oldZug.yOld;
-                        strecke.zuege.push(train);
-                        updatedOldTrain = 'true';
                     }
                 })
-                if (updatedOldTrain != 'true') {
-                    strecke.zuege.push(train);
-                }
-            } else { strecke.zuege.push(train); }
 
+            }
+            strecke.zuege.push(train);
         })
-        return strecke;
 
+
+        //Check if an old train is no longer in the new data to try keeping it until there is new information.
+        if (oldZuege) {
+
+            oldZuege.forEach(oldZug => {
+                isGone = true;
+
+                trains.forEach(train => {
+                    if (oldZug.zugnr + oldZug.beginn == train.zugnr + train.beginn) {
+                        isGone = false;
+                    }
+                })
+
+                if (isGone == true) {
+                    if (oldZug.oldness) {
+                        oldZug.oldness = oldZug.oldness + 1
+                    } else(oldZug.oldness = 1)
+
+                    if (oldZug.oldness) {
+                        if (oldZug.oldness <= 4) {
+                            strecke.zuege.push(oldZug);
+                        }
+                    } else {
+                        console.log("Zug is too old. Deleting: ");
+                        console.log(oldZug)
+                    }
+                    //console.log("Zug is not contained in new Request")
+                }
+            })
+
+        }
     })
 }
 

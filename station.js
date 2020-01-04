@@ -31,6 +31,6 @@ function drawMap(stationList) {
     background(backgroundColor);
     stationList.forEach(stationEntry => {
         station = new Station(stationEntry);
-        station.display();
+        station.display(text);
     });
 }
