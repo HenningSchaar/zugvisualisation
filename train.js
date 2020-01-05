@@ -44,7 +44,8 @@ class Train {
         let dataString = data.zugnr.replace(/\s/g, '')
         let trainType = dataString.replace(/\d+/g, '');
         let trainID = data.ID;
-        sendOsc('/trainInfo', dataString + ' ' + trainType + ' ' + trainID);
+        let progress = data.globalProgress;
+        sendOsc('/trainInfo', trainID + ' ' + dataString + ' ' + trainType + ' ' + progress);
         console.log(data);
     }
 
