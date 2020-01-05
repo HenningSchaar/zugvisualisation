@@ -10,6 +10,7 @@ class Station {
     }
 
     display(arg) {
+        noStroke();
         fill(this.color)
         ellipse(this.x, this.y, this.diameter, this.diameter);
         if (arg == text) {

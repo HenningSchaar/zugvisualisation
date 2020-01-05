@@ -4,6 +4,7 @@ let trainCanvas;
 let streckenOld;
 let strecken;
 let cursor;
+let explosions = [];
 
 //network
 
@@ -21,12 +22,13 @@ const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];
 const trainColour3 = [0, 255, 0];
 const trainColour4 = [0, 255, 0];
-const sizeY = 1440;
-const sizeX = sizeY * (16 / 9)
+const sizeY = 1200;
+const sizeX = sizeY * (16 / 10)
 const latOffset = 47.5;
 const lngOffset = 8;
 const coordRange = 2.7;
 const cursorDiameter = 20
+const audibleRadius = 100
 
 
 function preload() {
@@ -84,9 +86,10 @@ function draw() {
                 progressInfo = calculateProgress(zug, strecke);
                 zug.progressInfo = progressInfo
             })
-            drawTrains(strecke.zuege);
+            drawTrains(strecke);
         }
     })
+    drawExplosions();
     cursor.display();
 }
 
@@ -111,11 +114,16 @@ function getData(strecke) {
 
         //Write old y-position to newly fetched data Entry for smooth displaying.
         trains.forEach(train => {
+
+            // Give the train a Unique ID
+            train.ID = calculateID(train);
+
             if (oldZuege) {
 
                 oldZuege.forEach(oldZug => {
                     if (oldZug.zugnr + oldZug.beginn == train.zugnr + train.beginn) {
                         train.yOld = oldZug.yOld;
+
                     }
                 })
 
@@ -194,6 +202,18 @@ function sendOsc(address, value) {
     }
 
 }
+
+String.prototype.hashCode = function() {
+    var hash = 0,
+        i, chr;
+    if (this.length === 0) return hash;
+    for (i = 0; i < this.length; i++) {
+        chr = this.charCodeAt(i);
+        hash = ((hash << 5) - hash) + chr;
+        hash |= 0; // Convert to 32bit integer
+    }
+    return hash;
+};
 
 // Debugging functions
 

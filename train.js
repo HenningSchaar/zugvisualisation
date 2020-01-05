@@ -1,5 +1,5 @@
 class Train {
-    constructor(trainDataEntry) {
+    constructor(trainDataEntry, strecke) {
         this.x = trainDataEntry.xpos * (trainCanvas.height / 1000) + (trainCanvas.width / 2 - trainCanvas.height / 2);
         this.y = trainDataEntry.ypos * (trainCanvas.height / 1000);
         if (trainDataEntry.yOld) {
@@ -10,17 +10,26 @@ class Train {
         this.color = extractColour(trainDataEntry.farbe);
         this.speed = 0;
         if (trainDataEntry.progressInfo) {
-            let xy = calculateInBetweenPoint(trainDataEntry)
-            this.xPosOnMap = xy[0]
-            this.yPosOnMap = xy[1]
+            let xy = calculateInBetweenPoint(trainDataEntry);
+            this.xPosOnMap = xy[0];
+            this.yPosOnMap = xy[1];
+            trainDataEntry.xPosOnMap = this.xPosOnMap;
+            trainDataEntry.yPosOnMap = this.yPosOnMap;
             if (this.trainIsUnderCursor()) {
                 if (trainDataEntry.isActive) {
                     if (trainDataEntry.isActive = false) {
+                        trainDataEntry.globalProgress = calculateGlobalProgress(trainDataEntry, strecke);
                         this.transmitData(trainDataEntry);
+                        explode(trainDataEntry);
+                        cursor.positionDump()
                     }
                 } else {
+                    trainDataEntry.globalProgress = calculateGlobalProgress(trainDataEntry, strecke);
                     this.transmitData(trainDataEntry);
+                    explode(trainDataEntry);
+                    cursor.positionDump();
                 }
+                // When train is touched, draw it's two nearest Stations in white.
                 fill(255);
                 ellipse(trainDataEntry.progressInfo.stations[0].position[0], trainDataEntry.progressInfo.stations[0].position[1], this.diameter, this.diameter);
                 ellipse(trainDataEntry.progressInfo.stations[1].position[0], trainDataEntry.progressInfo.stations[1].position[1], this.diameter, this.diameter);
@@ -34,7 +43,8 @@ class Train {
     transmitData(data) {
         let dataString = data.zugnr.replace(/\s/g, '')
         let trainType = dataString.replace(/\d+/g, '');
-        sendOsc('/trainInfo', dataString + ' ' + trainType);
+        let trainID = data.ID;
+        sendOsc('/trainInfo', dataString + ' ' + trainType + ' ' + trainID);
         console.log(data);
     }
 
@@ -56,6 +66,7 @@ class Train {
     }
 
     display() {
+        noStroke();
         fill(this.color)
         ellipse(this.xPosOnMap, this.yPosOnMap, this.diameter, this.diameter);
     }
@@ -82,9 +93,10 @@ function extractColour(colour) {
     }
 }
 
-function drawTrains(trainList) {
+function drawTrains(strecke) {
+    let trainList = strecke.zuege
     trainList.forEach(trainDataEntry => {
-        train = new Train(trainDataEntry);
+        train = new Train(trainDataEntry, strecke);
         train.display();
     });
 }
@@ -170,4 +182,20 @@ function calculateInBetweenPoint(trainDataEntry) {
     v2 = v2.mult(trainDataEntry.progressInfo.progress);
     v2 = v2.add(v0);
     return [v2.x, v2.y]
+}
+
+function calculateID(train) {
+    let idString = train.zugnr + train.beginn;
+    let id = idString.hashCode();
+    if (id) {
+        return id;
+    } else { handleError('couldn\'t create ID for ' + train.zugnr) }
+}
+
+function calculateGlobalProgress(trainDataEntry, strecke) {
+    let position0 = strecke.stations[0].position;
+    let position1 = strecke.stations[strecke.stations.length - 1].position;
+    let y = trainDataEntry.yOld
+    let progress = y / (position1 - position0)
+    return progress;
 }
