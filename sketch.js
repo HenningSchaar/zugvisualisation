@@ -3,10 +3,16 @@ let map;
 let trainCanvas;
 let streckenOld;
 let strecken;
+let cursor;
+
+//network
+
+let socket;
+let isConnected;
 
 // General config
 
-const dataTimeout = 30000
+const dataTimeout = 60000
 
 // Config Display options
 const FPS = 20;
@@ -18,8 +24,9 @@ const trainColour4 = [0, 255, 0];
 const sizeY = 1440;
 const sizeX = sizeY * (16 / 9)
 const latOffset = 47.5;
-const lngOffset = 6.7;
+const lngOffset = 8;
 const coordRange = 2.7;
+const cursorDiameter = 20
 
 
 function preload() {
@@ -29,6 +36,7 @@ function preload() {
 
 
 function setup() {
+    setupOsc(8000, 12000)
 
     /* //Shorten Streckenarray for testing
     strecken.strecken = strecken.strecken.slice(0, 1); */
@@ -55,6 +63,12 @@ function setup() {
     // Draw map of all available Stations
     drawMap(stationList);
 
+    //Create Cursor
+    cursor = new Cursor;
+
+    //hide OS cursor
+    noCursor();
+
     // Get Zugfinder data on each strecke
     collectData();
 
@@ -73,6 +87,7 @@ function draw() {
             drawTrains(strecke.zuege);
         }
     })
+    cursor.display();
 }
 
 function collectData() {
@@ -146,6 +161,41 @@ function jsonUrl(url) {
     url = url.slice(0, 25) + 'js/json_' + url.slice(25)
     return url;
 }
+
+// Network Functions
+
+function setupOsc(oscPortIn, oscPortOut) {
+    socket = io.connect('http://localhost:8081', { port: 8081, rememberTransport: false });
+    socket.on('connect', function() {
+        socket.emit('config', {
+            server: { port: oscPortIn, host: 'localhost' },
+            client: { port: oscPortOut, host: 'localhost' }
+        });
+    });
+    socket.on('connect', function() {
+        isConnected = true;
+    });
+    socket.on('message', function(msg) {
+        if (msg[0] == '#bundle') {
+            for (var i = 2; i < msg.length; i++) {
+                receiveOsc(msg[i][0], msg[i].splice(1));
+            }
+        } else {
+            receiveOsc(msg[0], msg.splice(1));
+        }
+    });
+}
+
+function sendOsc(address, value) {
+    if (isConnected) {
+        socket.emit('message', [address, value]);
+    } else {
+        handleError("No connection, message " + value + " not sent to " + adress)
+    }
+
+}
+
+// Debugging functions
 
 function stop() {
     noLoop();

@@ -13,13 +13,46 @@ class Train {
             let xy = calculateInBetweenPoint(trainDataEntry)
             this.xPosOnMap = xy[0]
             this.yPosOnMap = xy[1]
-            if ((this.xPosOnMap - 10) <= mouseX && mouseX <= (this.xPosOnMap + 10) && (this.yPosOnMap - 10) <= mouseY && mouseY <= (this.yPosOnMap + 10)) {
-                console.log(trainDataEntry);
+            if (this.trainIsUnderCursor()) {
+                if (trainDataEntry.isActive) {
+                    if (trainDataEntry.isActive = false) {
+                        this.transmitData(trainDataEntry);
+                    }
+                } else {
+                    this.transmitData(trainDataEntry);
+                }
                 fill(255);
                 ellipse(trainDataEntry.progressInfo.stations[0].position[0], trainDataEntry.progressInfo.stations[0].position[1], this.diameter, this.diameter);
                 ellipse(trainDataEntry.progressInfo.stations[1].position[0], trainDataEntry.progressInfo.stations[1].position[1], this.diameter, this.diameter);
+                trainDataEntry.isActive = true;
+            } else {
+                trainDataEntry.isActive = false;
             }
         }
+    }
+
+    transmitData(data) {
+        let dataString = data.zugnr.replace(/\s/g, '')
+        let trainType = dataString.replace(/\d+/g, '');
+        sendOsc('/trainInfo', dataString + ' ' + trainType);
+        console.log(data);
+    }
+
+    trainIsUnderCursor() {
+        let cursorRadius = cursorDiameter / 2
+
+        let loBoundX = this.xPosOnMap - cursorRadius;
+        let hiBoundX = loBoundX + cursorDiameter;
+
+        let loBoundY = this.yPosOnMap - cursorRadius;
+        let hiBoundY = loBoundY + cursorDiameter;
+
+        if (loBoundX <= mouseX &&
+            hiBoundX >= mouseX &&
+            loBoundY <= mouseY &&
+            hiBoundY >= mouseY) {
+            return true;
+        } else { return false }
     }
 
     display() {

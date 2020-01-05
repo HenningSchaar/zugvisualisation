@@ -6,6 +6,7 @@ const apiKey = 'AIzaSyAqHZBp2U6KwmMlSvR4Tab_j6JVy23xIxI';
 
 let stations = []
 let stationsWithCoordinates = []
+let failedRequests = 0
 const streckenList = JSON.parse(fs.readFileSync('strecken.json')).strecken;
 const map = JSON.parse(fs.readFileSync('map.json'));
 map.stations = [];
@@ -27,10 +28,12 @@ checkCoordinates();
 
 
 function checkCoordinates() {
-    if (stationsWithCoordinates.length == stations.length) {
+    if ((stationsWithCoordinates.length - failedRequests) == stations.length) {
         map.stations = stationsWithCoordinates;
-        console.log(map);
-        //fs.writeFileSync('map.json', JSON.stringify(map, null, "\t"));
+        //console.log(map);
+        console.log('Write file to Disk');
+        fs.writeFileSync('map.json', JSON.stringify(map, null, "\t"));
+        console.log('done!');
     } else {
         setTimeout(checkCoordinates, 1000);
     }
@@ -40,7 +43,8 @@ function checkCoordinates() {
 
 
 function getCoordinates(station) {
-    let stationFormatted = escape(station.replace(/ /g, '+')).replace(/ß/g, 'ss')
+    stationWithProvince = station + " Germany"
+    let stationFormatted = escape(stationWithProvince.replace(/ /g, '+')).replace(/ß/g, 'ss')
     let apiUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${stationFormatted}&key=${apiKey}`;
 
     request(apiUrl, (error, resp, body) => {
@@ -56,7 +60,10 @@ function getCoordinates(station) {
             entry.name = station;
             entry.coordinates = coordinates;
             stationsWithCoordinates.push(entry);
-        } else { handleError("API Request for " + stationFormatted + " failed." + "\n" + locationData.error_message); }
+        } else {
+            handleError("API Request for " + stationFormatted + " failed." + "\n" + locationData.error_message);
+            failedRequests = failedRequests + 1
+        }
 
         //setTimeout(addCoordinates, 50000);
     });
