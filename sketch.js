@@ -28,7 +28,7 @@ const latOffset = 47.5;
 const lngOffset = 8;
 const coordRange = 2.7;
 const cursorDiameter = 20
-const audibleRadius = 100
+const audibleRadius = 300
 
 
 function preload() {
@@ -50,7 +50,7 @@ function setup() {
     stationList = map.stations;
 
     //Initialize Graphics
-    createCanvas(sizeX, sizeY);
+    createCanvas(displayWidth, displayHeight);
     trainCanvas = createGraphics(sizeX, sizeY, P2D);
     background(backgroundColor);
     frameRate(FPS);
@@ -214,6 +214,12 @@ String.prototype.hashCode = function() {
     }
     return hash;
 };
+
+//prevent scrolling
+
+function mouseWheel(event) {
+    return false;
+}
 
 // Debugging functions
 
