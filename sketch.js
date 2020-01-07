@@ -16,7 +16,7 @@ let isConnected;
 const dataTimeout = 60000
 
 // Config Display options
-const FPS = 20;
+const FPS = 60;
 const backgroundColor = 50;
 const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];

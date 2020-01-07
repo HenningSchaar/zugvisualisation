@@ -95,7 +95,7 @@ class Explosion {
         stroke(255, 255, 255, this.a);
         noFill();
         ellipse(this.x, this.y, this.r, this.r);
-        this.r = this.r + 1;
-        this.a = this.a - 1;
+        this.r = this.r + (20 / FPS);
+        this.a = this.a - (20 / FPS);
     }
 }

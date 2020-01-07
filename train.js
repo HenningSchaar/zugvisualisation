@@ -105,7 +105,7 @@ function drawTrains(strecke) {
 function calculateProgress(zug, strecke) {
     if (zug.yOld) {
         ypos = zug.yOld;
-        zug.yOld = lerp(zug.yOld, zug.ypos, 0.005);
+        zug.yOld = lerp(zug.yOld, zug.ypos, (0.1 / FPS));
     } else {
         ypos = zug.ypos;
         zug.yOld = zug.ypos;
