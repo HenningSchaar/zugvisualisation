@@ -1,3 +1,4 @@
 [submodule "p5js-osc"]
 	path = p5js-osc
 	url = https://github.com/genekogan/p5js-osc.git
+	ignore = dirty
