@@ -16,7 +16,7 @@ let isConnected;
 const dataTimeout = 60000
 
 // Config Display options
-const FPS = 60;
+const FPS = 59.98;
 const backgroundColor = 50;
 const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];
@@ -28,7 +28,7 @@ const latOffset = 47.5;
 const lngOffset = 8;
 const coordRange = 2.7;
 const cursorDiameter = 20
-const audibleRadius = 300
+const audibleRadius = 500
 
 
 function preload() {
@@ -50,8 +50,8 @@ function setup() {
     stationList = map.stations;
 
     //Initialize Graphics
-    createCanvas(displayWidth, displayHeight);
-    trainCanvas = createGraphics(sizeX, sizeY, P2D);
+    createCanvas(displayWidth * 4, displayHeight * 4);
+    trainCanvas = createGraphics(sizeX * 4, sizeY * 4, P2D);
     background(backgroundColor);
     frameRate(FPS);
     textSize(10);
