@@ -28,9 +28,7 @@ unzip p5.zip && rm -r __MACOSX/ && rm p5.zip
 
 npm i
 
-cd p5js-osc
-
-npm i
+cd p5js-osc && npm i
 ```
 
 ## Run
