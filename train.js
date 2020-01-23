@@ -7,7 +7,7 @@ class Train {
         }
 
         this.diameter = 10;
-        this.color = extractColour(trainDataEntry.farbe);
+        this.color = extractColour(trainDataEntry);
         this.speed = 0;
         if (trainDataEntry.progressInfo) {
             let xy = calculateInBetweenPoint(trainDataEntry);
@@ -73,22 +73,20 @@ class Train {
     }
 }
 
-function extractColour(colour) {
-    if (colour == "rot") {
-        return trainColour1;
+function extractColour(trainDataEntry) {
+    let dataString = trainDataEntry.zugnr.replace(/\s/g, '')
+    let trainType = dataString.replace(/\d+/g, '');
+    if (trainCategory1.includes(trainType)) {
+        return trainColour1
     } else {
-        if (colour == "lila") {
-            return trainColour2;
+        if (trainCategory2.includes(trainType)) {
+            return trainColour2
         } else {
-            if (colour == "gruen") {
-                return trainColour3;
+            if (trainCategory3.includes(trainType)) {
+                return trainColour3
             } else {
-                if (colour == "blau") {
-                    return trainColour4;
-                } else {
-                    console.log('Unknown colour "' + colour + '"')
-                    return [0, 0, 0];
-                }
+                console.log('Unknown traintype "' + trainType + '"')
+                return [0, 0, 0];
             }
         }
     }

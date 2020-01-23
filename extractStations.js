@@ -20,9 +20,11 @@ streckenList.forEach(strecke => {
 stations = [...new Set(stations)]; //remove duplicates
 //stations = stations.sort(); //sort alphabetically
 
-stations.forEach(station => {
-    getCoordinates(station);
-})
+stations.forEach((station, idx) => {
+    setTimeout(() => {
+        getCoordinates(station, idx, stations.length);
+    }, 1000 * idx);
+});
 
 checkCoordinates();
 
@@ -42,7 +44,10 @@ function checkCoordinates() {
 
 
 
-function getCoordinates(station) {
+function getCoordinates(station, idx, max) {
+
+    console.log("requesting: " + station + " " + idx + "/" + max);
+
     stationWithProvince = station + " Germany"
     let stationFormatted = escape(stationWithProvince.replace(/ /g, '+')).replace(/ß/g, 'ss')
     let apiUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${stationFormatted}&key=${apiKey}`;

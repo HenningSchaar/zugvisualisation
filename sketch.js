@@ -14,6 +14,9 @@ let isConnected;
 // General config
 
 const dataTimeout = 60000
+let trainCategory3 = ["VIA", "RB", "BusSEV"];
+let trainCategory2 = ["RE", "IC", "IRE"];
+let trainCategory1 = ["ICE", "TGV", "NJ"];
 
 // Config Display options
 const FPS = 30;
@@ -24,9 +27,9 @@ const trainColour3 = [0, 255, 0];
 const trainColour4 = [0, 255, 0];
 const sizeY = 1920;
 const sizeX = 1080
-const latOffset = 47.5;
-const lngOffset = 8;
-const coordRange = 2.7;
+const latOffset = 49.3;
+const lngOffset = 7.1;
+const coordRange = 2.4;
 const cursorDiameter = 20
 const audibleRadius = 500
 
@@ -228,5 +231,6 @@ function stop() {
     trainCanvas.noLoop();
 }
 
-function handleError(error) {}
-console.log(error);
+function handleError(error) {
+    console.log(error);
+}
