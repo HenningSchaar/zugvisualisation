@@ -16,14 +16,14 @@ let isConnected;
 const dataTimeout = 60000
 
 // Config Display options
-const FPS = 59.98;
+const FPS = 30;
 const backgroundColor = 50;
 const trainColour1 = [255, 0, 0];
 const trainColour2 = [255, 0, 255];
 const trainColour3 = [0, 255, 0];
 const trainColour4 = [0, 255, 0];
-const sizeY = 1200;
-const sizeX = sizeY * (16 / 10)
+const sizeY = 1920;
+const sizeX = 1080
 const latOffset = 47.5;
 const lngOffset = 8;
 const coordRange = 2.7;
@@ -50,8 +50,8 @@ function setup() {
     stationList = map.stations;
 
     //Initialize Graphics
-    createCanvas(displayWidth, displayHeight);
-    trainCanvas = createGraphics(sizeX, sizeY, P2D);
+    createCanvas(1920, 1080);
+    trainCanvas = createGraphics(1920, 1080, P2D);
     background(backgroundColor);
     frameRate(FPS);
     textSize(10);
