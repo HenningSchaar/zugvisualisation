@@ -50,8 +50,8 @@ function setup() {
     stationList = map.stations;
 
     //Initialize Graphics
-    createCanvas(displayWidth * 4, displayHeight * 4);
-    trainCanvas = createGraphics(sizeX * 4, sizeY * 4, P2D);
+    createCanvas(displayWidth, displayHeight);
+    trainCanvas = createGraphics(sizeX, sizeY, P2D);
     background(backgroundColor);
     frameRate(FPS);
     textSize(10);
@@ -228,6 +228,5 @@ function stop() {
     trainCanvas.noLoop();
 }
 
-function handleError(error) {
-    console.log(error);
-}
+function handleError(error) {}
+console.log(error);
