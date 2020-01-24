@@ -75,7 +75,7 @@ function setup() {
     noCursor();
 
     // Get Zugfinder data on each strecke
-    collectData();
+    //collectData();
 
     //noLoop();
 }
@@ -103,69 +103,79 @@ function collectData() {
     setTimeout(collectData, dataTimeout);
 }
 
-function getData(strecke) {
-    url = jsonUrl(strecke.url)
-    httpGet(url, false, function(response) {
-        console.log(response);
+function evaluateData(response) {
+    response = response[0];
+    splitResponse = response.split("\null")
+    url = splitResponse[0];
+    let strecke
 
-        trains = response.array; //convert train data to an array of trains
-        trains.shift(); //remove first entry which for some reason is always empty
-        if (strecke.zuege) {
-            oldZuege = strecke.zuege;
-        } else { oldZuege = null }
-        strecke.zuege = [];
+    strecken.strecken.forEach(str => {
+        if (str.url == url) {
+            strecke = str;
+        }
+    })
 
-        //Write old y-position to newly fetched data Entry for smooth displaying.
-        trains.forEach(train => {
+    response = JSON.parse(splitResponse[1]);
 
-            // Give the train a Unique ID
-            train.ID = calculateID(train);
+    console.log(response);
 
-            if (oldZuege) {
+    trains = response.array; //convert train data to an array of trains
+    trains.shift(); //remove first entry which for some reason is always empty
+    if (strecke.zuege) {
+        oldZuege = strecke.zuege;
+    } else { oldZuege = null }
+    strecke.zuege = [];
 
-                oldZuege.forEach(oldZug => {
-                    if (oldZug.zugnr + oldZug.beginn == train.zugnr + train.beginn) {
-                        train.yOld = oldZug.yOld;
+    //Write old y-position to newly fetched data Entry for smooth displaying.
+    trains.forEach(train => {
 
-                    }
-                })
+        // Give the train a Unique ID
+        train.ID = calculateID(train);
 
-            }
-            strecke.zuege.push(train);
-        })
-
-
-        //Check if an old train is no longer in the new data to try keeping it until there is new information.
         if (oldZuege) {
 
             oldZuege.forEach(oldZug => {
-                isGone = true;
+                if (oldZug.zugnr + oldZug.beginn == train.zugnr + train.beginn) {
+                    train.yOld = oldZug.yOld;
 
-                trains.forEach(train => {
-                    if (oldZug.zugnr + oldZug.beginn == train.zugnr + train.beginn) {
-                        isGone = false;
-                    }
-                })
-
-                if (isGone == true) {
-                    if (oldZug.oldness) {
-                        oldZug.oldness = oldZug.oldness + 1
-                    } else(oldZug.oldness = 1)
-
-                    if (oldZug.oldness) {
-                        if (oldZug.oldness <= 4) {
-                            strecke.zuege.push(oldZug);
-                        }
-                    } else {
-                        console.log("Zug is too old. Deleting: ");
-                        console.log(oldZug)
-                    }
-                    //console.log("Zug is not contained in new Request")
                 }
             })
 
         }
+        strecke.zuege.push(train);
     })
+
+
+    //Check if an old train is no longer in the new data to try keeping it until there is new information.
+    if (oldZuege) {
+
+        oldZuege.forEach(oldZug => {
+            isGone = true;
+
+            trains.forEach(train => {
+                if (oldZug.zugnr + oldZug.beginn == train.zugnr + train.beginn) {
+                    isGone = false;
+                }
+            })
+
+            if (isGone == true) {
+                if (oldZug.oldness) {
+                    oldZug.oldness = oldZug.oldness + 1
+                } else(oldZug.oldness = 1)
+
+                if (oldZug.oldness) {
+                    if (oldZug.oldness <= 4) {
+                        strecke.zuege.push(oldZug);
+                    }
+                } else {
+                    console.log("Zug is too old. Deleting: ");
+                    console.log(oldZug)
+                }
+                //console.log("Zug is not contained in new Request")
+            }
+        })
+
+    }
 }
 
 function jsonUrl(url) {
@@ -195,6 +205,16 @@ function setupOsc(oscPortIn, oscPortOut) {
             receiveOsc(msg[0], msg.splice(1));
         }
     });
+    socket.on('hi', function(msg) {
+        console.log('hi');
+    });
+}
+
+function receiveOsc(address, value) {
+    if (adress = '/streckenData') {
+        evaluateData(value);
+    } else(handleError('Received from unknown adress: ' + adress))
+
 }
 
 function sendOsc(address, value) {
