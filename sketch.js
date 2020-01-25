@@ -16,7 +16,7 @@ let isConnected;
 const dataTimeout = 60000
 let trainCategory3 = ["VIA", "RB", "BusSEV"];
 let trainCategory2 = ["RE", "IC", "IRE"];
-let trainCategory1 = ["ICE", "TGV", "NJ"];
+let trainCategory1 = ["ICE", "TGV", "NJ", "RJX"];
 
 // Config Display options
 const FPS = 30;
@@ -61,6 +61,7 @@ function setup() {
     noStroke();
     trainCanvas.clear(); //.background(50, 50, 0, 50);
     trainCanvas.noStroke();
+    textAlign(CENTER, BOTTOM);
 
     // Calculate Canvas position based on coordinates
     addPixelData(stationList);
@@ -78,6 +79,7 @@ function setup() {
     //collectData();
 
     //noLoop();
+    explode(JSON.parse('{"id": 123987,"beginn": "1840","zugnr": "RB 10635","xpos": 122,"ypos": 660, "xPosOnMap": 800, "yPosOnMap": 800,"deg":90,"lauf": "Leutesdärf(Rhein) - Neuwied","ankunft": "20:58","rism": "2","farbe": "blau"}'));
 }
 
 
@@ -114,7 +116,7 @@ function evaluateData(response) {
             strecke = str;
         }
     })
-
+    console.log(splitResponse[1]);
     response = JSON.parse(splitResponse[1]);
 
     console.log(response);

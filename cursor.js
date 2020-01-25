@@ -84,6 +84,7 @@ function explosionNotPresent(trainId) {
 
 class Explosion {
     constructor(trainDataEntry) {
+        this.lauf = trainDataEntry.lauf;
         this.x = trainDataEntry.xPosOnMap;
         this.y = trainDataEntry.yPosOnMap;
         this.id = trainDataEntry.ID;
@@ -95,7 +96,29 @@ class Explosion {
         stroke(255, 255, 255, this.a);
         noFill();
         ellipse(this.x, this.y, this.r, this.r);
+        this.drawExplosionText();
         this.r = this.r + (20 / FPS);
         this.a = this.a - (20 / FPS);
+    }
+    drawExplosionText() {
+        textSize(1)
+        fill(255, 255, 255, this.a);
+        noStroke();
+        textAlign(CENTER, BASELINE);
+        push();
+        translate(this.x, this.y);
+        rotate(-PI / 2);
+        [...this.lauf].forEach(letter => {
+            translate(0, this.r * -1);
+            let scl = this.r * 0.1;
+            scale(scl);
+            text(letter, 0, (this.r * 0.45) * (1 / scl));
+            scale(1 / scl);
+            translate(0, this.r * 1);
+            rotate(0.12);
+        })
+        stroke(255, 255, 255, this.a);
+        noFill();
+        pop();
     }
 }
